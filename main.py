@@ -9,19 +9,20 @@ os.environ["LOG_LEVEL"] = (
     "DEBUG" if os.getenv("LOG_LEVEL") is None else os.getenv("LOG_LEVEL")
 )
 
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__))))
 
 from spcal.cell_iterator import CellIterator
 from spcal.fixed_point import FixedPointConfig, solve_placeholders
 from spcal.netlist_graph import NetlistGraph
 from spcal.sp_eval import evaluate_cells
 from spcal.utils.load_files import load_config, load_netlist
-from spcal.utils.logger import logger
+from spcal.utils.logger import logger, set_log_dir
 from spcal.utils.visulize import (visualize_interactive_netlist_graph,
                                   visualize_netlist_graph)
 
+set_log_dir("logs")
 app = typer.Typer()
-base_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../")
+base_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)))
 
 @app.command(name="sp")
 def sp(

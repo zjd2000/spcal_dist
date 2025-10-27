@@ -1,147 +1,90 @@
-# spcal
+# spcal 使用说明
 
-## Overview
+## 1 下载代码
 
-The spcal system is a comprehensive Python-based toolchain for calculating signal probabilities (SP) and analyzing CMOS circuits in electronic design automation (EDA) workflows. This system processes various netlist formats, standard cell libraries, and switching activity data to perform static probability analysis and CMOS circuit characterization.
+您可以通过压缩包 `spcal_dist.zip` 下获取代码。
 
-This document provides a high-level overview of the spcal architecture, core components, and primary capabilities. For detailed usage instructions, see Getting Started. For in-depth technical documentation of specific analysis methods, see Core Analysis Features. For data format specifications and processing workflows, see Data Processing Pipeline.
+请确保同时获得了spcal_data 压缩包，用于存放spcal运行时所需的lib文件。放在项目根目录下面
 
-## Quick Start
+## 2 安装环境
 
-To get started with spcal, follow these steps:
+### 2.1 安装 uv
 
-1. Clone the spcal repository:
+uv 是一个 Python 包管理器，用于安装和管理 Python 项目的依赖项。它可以帮助您快速、方便地安装和更新项目所需的所有依赖项。
 
-You may use Access Token to clone the repository as long as this project is private.
-
-```bash
-git clone https://{ACCESS_TOKEN}@github.com/bytedance/spcal.git
-cd spcal
-```
-
-2. Install the required dependencies using uv:
-
-If you have any issues, please refer to the uv documentation.
-
-https://github.com/astral-sh/uv
+linux(WLS2) 下安装 uv 可以通过以下命令：
 
 ```bash
-# On Linux.
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-```bash
-# On macOS.
-brew install uv
-```
+其他平台的安装参考 [uv 安装文档](https://docs.astral.sh/uv/getting-started/installation/)
+
+### 2.2 安装 spcal
+
+首先，您需要联系管理员拿到一个最新的spcal wheel包，比如 `spcal-0.9.1-py3-none-any.whl`
+
+然后，执行
 
 ```bash
-# On Windows.
-powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+uv add spcal-0.9.1-py3-none-any.whl
 ```
 
-3. Install uv virtual environment:
+### 2.3 安装依赖项
+
+您可以通过以下命令安装项目所需的所有依赖项：
 
 ```bash
 uv sync
 ```
 
-4. Run spcal:
+### 3 运行 spcal
+
+您可以通过以下命令运行 spcal：
 
 ```bash
-uv run src/spcal/main.py
+uv run main.py
 ```
 
-5. use spcal\_data
+默认是运行demo中的示例代码。您可以根据需要修改main.py中的代码。
 
-Do not commit your plaintext token in .gitmodule as spcal\_data is a privaet repo.
+### 4 参数说明
 
-Use instructions above instead.
+参数形如：    
+```python
+demo_mac20_arg = {
+        "cell_name": "bl16_U2",
+        "data_dir": "spcal_data",
+        "netlist": "demo/mac_20/mac_20_flattened.v",
+        "config": "demo/mac_20/mac_20.yaml",
+        "bdd_backend": "autoref",
+        "visual": "False",
+        "output_dir": "demo/mac_20/outputs",
+        "bdd_dump_path": None,
+        "bdd_dump_format": "dag",
+        "overwrite": True,
+    }
+```
+其中：
+- cell_name： 待计算的cell名称，可以是多个cell，比如 ["bl16_U2", "bl16_U3"]
+- data_dir： spcal_data 压缩包解压后的目录
+- netlist： 待计算的cell的netlist文件路径
+- config： 待计算的cell的配置文件路径
+- bdd_backend： BDD后端，可选值为 "autoref" 和 "pybdd"
+- visual： 是否可视化结果，可选值为 "True" 和 "False"
+- output_dir： 输出目录，用于存放计算结果
+- bdd_dump_path： BDD dump 文件路径，用于存放BDD可视化结果
+- bdd_dump_format： BDD dump 文件格式，可选值为 "dag" 和 "expr"
+- overwrite： 是否覆盖输出目录下的文件，可选值为 "True" 和 "False"
 
+### 5 更新spcal
+
+先卸载旧版本的spcal：
 ```bash
-git config submodule.spcal_data.url https://<token>@github.com/sunyaqi123/spcal_data.git
+uv remove spcal
 ```
 
-### High-Level System Components
-
-![image](https://github.com/user-attachments/assets/66424518-d0ee-40e3-a800-c1186458cdfd)
-
-### Core Data Flow and Processing Pipeline
-The system processes electronic design data through a structured pipeline that transforms raw netlist and library files into probability analysis results and visualizations.
-
-![image](https://github.com/user-attachments/assets/972018fb-ccb9-4a64-9ffc-8fed1f766197)
-
-## Core Components
-
-### Command Line Interface
-
-The system provides two primary entry points defined in the uv configuration:
-
-## Core Components
-
-### Command Line Interface
-
-The system provides two primary entry points defined in the uv configuration:
-
-| Command | Entry Point               | Purpose                                       |
-|---------|---------------------------|-----------------------------------------------|
-| `sp`    | `spcal.main:sp_main`      | Static probability analysis of specified cells |
-| `cmos`  | `spcal.main:cmos_main`    | CMOS circuit analysis and BTI computation      |
-
-
-## Key Dependencies and Technologies
-
-The spcal system leverages several specialized libraries for electronic design analysis:
-
-| Library      | Version   | Purpose                                                                 |
-|--------------|-----------|-------------------------------------------------------------------------|
-| `networkx`   | `^3.4.2`  | Graph-based netlist representation and analysis                         |
-| `dd`         | `^0.6.0`  | Binary Decision Diagram (BDD) operations for exact probability calculation |
-| `scipy`      | `^1.15.1` | Scientific computing and numerical analysis                             |
-| `matplotlib` | `^3.9.2`  | Static plotting and visualization                                       |
-| `plotly`     | `^5.24.1` | Interactive visualizations and dashboards                               |
-| `schemdraw`  | `^0.19`   | Circuit diagram generation                                              |
-| `graphviz`   | `^0.20.3` | Graph visualization and layout                                          |
-| `typer`      |	^0.13.0	| Command-line interface framework  |
-| `pyyaml`	| ^6.0.2	| Configuration file parsing |
-
-### Analysis Capabilities
-
-The spcal system provides two main analysis modes:
-
-  1. Static Probability (SP) Analysis: Computes signal transition probabilities using graph-based propagation algorithms with support for both exact BDD-based and approximate Monte Carlo estimation methods
-
-  2. CMOS Circuit Analysis: Performs transistor-level analysis including Bias Temperature Instability (BTI) computation and power/performance characterization
-
-For detailed information about these analysis capabilities, see Static Probability (SP) Analysis and CMOS Circuit Analysis.
-
-## Key Features
-
-### Multi-Format Data Support
-
-- Netlist Formats: CDL (Circuit Description Language), LIB (Liberty format), Verilog
-- Activity Data: SAIF (Switching Activity Interchange Format) files
-- Configuration: YAML-based configuration system with library specifications
-
-### Advanced Probability Estimation
-
-- Exact Methods: Binary Decision Diagram (BDD) based computation for precise results
-- Approximate Methods: Monte Carlo simulation for complex circuits with performance optimization
-- Graph Algorithms: NetworkX-based topological analysis and signal propagation
-
-### Comprehensive Visualization
-
-- Static Plots: matplotlib-based charts and graphs for analysis results
-- Interactive Dashboards: plotly-based interactive visualizations with zoom and filtering
-- Circuit Diagrams: schemdraw integration for generating circuit schematics
-- Graph Layouts: graphviz-powered network topology visualization
-
-### Standard Cell Library Integration
-
-- ASAP7 Support: Built-in support for ASAP7 standard cell libraries
-- JSON Representation: Efficient library storage and access in JSON format
-- Configurable Libraries: Extensible library system for additional standard cell sets
-
-README is Written by DeepWiKi
-https://deepwiki.com/sunyaqi123/spcal
-Developed with ❤️ by SYQ
+然后，安装新版本的spcal：
+```bash
+uv add spcal-0.9.1-py3-none-any.whl
+```
