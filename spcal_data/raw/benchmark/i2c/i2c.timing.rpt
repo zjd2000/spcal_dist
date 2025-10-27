@@ -1,0 +1,52 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : i2c
+Version: O-2018.06-SP1
+Date   : Sat Feb  8 00:34:50 2025
+****************************************
+
+Operating Conditions: PVT_0P7V_25C   Library: asap7sc7p5t_SEQ_RVT_TT_nldm_220123
+Wire Load Model Mode: segmented
+
+  Startpoint: pi038 (input port)
+  Endpoint: po035 (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  pi038 (in)                               0.00       0.00 f
+  U1292/Y (NOR3x2_ASAP7_75t_R)            11.93      11.93 r
+  U791/Y (AND2x6_ASAP7_75t_R)             25.80      37.73 r
+  U790/Y (INVx6_ASAP7_75t_R)               8.81      46.54 f
+  U1241/Y (NOR2x2_ASAP7_75t_R)            10.24      56.78 r
+  U792/Y (BUFx6f_ASAP7_75t_R)             16.84      73.62 r
+  U1237/Y (AND3x4_ASAP7_75t_R)            25.87      99.49 r
+  U537/Y (BUFx6f_ASAP7_75t_R)             17.17     116.66 r
+  U536/Y (INVx6_ASAP7_75t_R)               6.66     123.32 f
+  U1176/Y (NOR2x2_ASAP7_75t_R)             8.89     132.21 r
+  U1298/Y (NAND2xp5_ASAP7_75t_R)           9.85     142.06 f
+  U1297/Y (BUFx5_ASAP7_75t_R)             24.13     166.19 f
+  U757/Y (BUFx16f_ASAP7_75t_R)            21.07     187.26 f
+  U1285/Y (INVx6_ASAP7_75t_R)              7.55     194.81 r
+  U781/Y (AND2x6_ASAP7_75t_R)             23.83     218.64 r
+  U782/Y (INVx6_ASAP7_75t_R)               8.26     226.90 f
+  U1296/Y (OR4x2_ASAP7_75t_R)             44.64     271.55 f
+  U912/Y (BUFx6f_ASAP7_75t_R)             20.56     292.11 f
+  U1055/Y (INVx4_ASAP7_75t_R)              6.14     298.25 r
+  U1184/Y (AND4x2_ASAP7_75t_R)            32.75     331.00 r
+  U707/Y (BUFx3_ASAP7_75t_R)              17.71     348.70 r
+  U706/Y (INVx2_ASAP7_75t_R)               5.08     353.78 f
+  U1370/Y (OAI221xp5_ASAP7_75t_R)          6.97     360.76 r
+  po035 (out)                              0.00     360.76 r
+  data arrival time                                 360.76
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

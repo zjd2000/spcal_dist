@@ -1,0 +1,124 @@
+# Warning: SAIF file '/home/syq/spcal/src/spcal/tools/../../../data/saif/arbiter.saif' not found. Init as 0.5.
+libs:
+- asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120
+- asap7sc7p5t_AO_RVT_TT_nldm_211120
+- asap7sc7p5t_INVBUF_RVT_TT_nldm_220122
+- asap7sc7p5t_OA_RVT_TT_nldm_211120
+- asap7sc7p5t_SEQ_RVT_TT_nldm_220123
+- manual
+port_prefixes:
+  input:
+  - .A
+  - .B
+  - .C
+  - .D
+  - .E
+  - .CI
+  - .H
+  output:
+  - .Y
+  - .QN
+  - .L
+  - .SN
+  - .CON
+external_sp_inputs_spec:
+  ALUwrtTag[0]: 0.5
+  ALUwrtTag[1]: 0.5
+  ALUwrtTag[2]: 0.5
+  ALUwrtTag[3]: 0.5
+  LSwrtTag[0]: 0.5
+  LSwrtTag[1]: 0.5
+  LSwrtTag[2]: 0.5
+  LSwrtTag[3]: 0.5
+  regNameO[0]: 0.5
+  regNameO[1]: 0.5
+  regNameO[2]: 0.5
+  regNameO[3]: 0.5
+  regNameO[4]: 0.5
+  regNameT[0]: 0.5
+  regNameT[1]: 0.5
+  regNameT[2]: 0.5
+  regNameT[3]: 0.5
+  regNameT[4]: 0.5
+  wrtTagDec[0]: 0.5
+  wrtTagDec[1]: 0.5
+  wrtTagDec[2]: 0.5
+  wrtTagDec[3]: 0.5
+  wrtNameDec[0]: 0.5
+  wrtNameDec[1]: 0.5
+  wrtNameDec[2]: 0.5
+  wrtNameDec[3]: 0.5
+  wrtNameDec[4]: 0.5
+  ALUwrtData[0]: 0.5
+  ALUwrtData[1]: 0.5
+  ALUwrtData[2]: 0.5
+  ALUwrtData[3]: 0.5
+  ALUwrtData[4]: 0.5
+  ALUwrtData[5]: 0.5
+  ALUwrtData[6]: 0.5
+  ALUwrtData[7]: 0.5
+  ALUwrtData[8]: 0.5
+  ALUwrtData[9]: 0.5
+  ALUwrtData[10]: 0.5
+  ALUwrtData[11]: 0.5
+  ALUwrtData[12]: 0.5
+  ALUwrtData[13]: 0.5
+  ALUwrtData[14]: 0.5
+  ALUwrtData[15]: 0.5
+  ALUwrtData[16]: 0.5
+  ALUwrtData[17]: 0.5
+  ALUwrtData[18]: 0.5
+  ALUwrtData[19]: 0.5
+  ALUwrtData[20]: 0.5
+  ALUwrtData[21]: 0.5
+  ALUwrtData[22]: 0.5
+  ALUwrtData[23]: 0.5
+  ALUwrtData[24]: 0.5
+  ALUwrtData[25]: 0.5
+  ALUwrtData[26]: 0.5
+  ALUwrtData[27]: 0.5
+  ALUwrtData[28]: 0.5
+  ALUwrtData[29]: 0.5
+  ALUwrtData[30]: 0.5
+  ALUwrtData[31]: 0.5
+  LSwrtData[0]: 0.5
+  LSwrtData[1]: 0.5
+  LSwrtData[2]: 0.5
+  LSwrtData[3]: 0.5
+  LSwrtData[4]: 0.5
+  LSwrtData[5]: 0.5
+  LSwrtData[6]: 0.5
+  LSwrtData[7]: 0.5
+  LSwrtData[8]: 0.5
+  LSwrtData[9]: 0.5
+  LSwrtData[10]: 0.5
+  LSwrtData[11]: 0.5
+  LSwrtData[12]: 0.5
+  LSwrtData[13]: 0.5
+  LSwrtData[14]: 0.5
+  LSwrtData[15]: 0.5
+  LSwrtData[16]: 0.5
+  LSwrtData[17]: 0.5
+  LSwrtData[18]: 0.5
+  LSwrtData[19]: 0.5
+  LSwrtData[20]: 0.5
+  LSwrtData[21]: 0.5
+  LSwrtData[22]: 0.5
+  LSwrtData[23]: 0.5
+  LSwrtData[24]: 0.5
+  LSwrtData[25]: 0.5
+  LSwrtData[26]: 0.5
+  LSwrtData[27]: 0.5
+  LSwrtData[28]: 0.5
+  LSwrtData[29]: 0.5
+  LSwrtData[30]: 0.5
+  LSwrtData[31]: 0.5
+  clk: 0.5
+  rst: 0.5
+  rdy: 0.5
+  ALUwrtEn: 0.5
+  LSwrtEn: 0.5
+  enWrtDec: 0.5
+  branchDeeper: 0.5
+  bFreeEn: 0.5
+  misTaken: 0.5

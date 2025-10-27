@@ -1,0 +1,294 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : adder
+Version: O-2018.06-SP1
+Date   : Fri Feb  7 22:51:23 2025
+****************************************
+
+Operating Conditions: PVT_0P7V_25C   Library: asap7sc7p5t_SEQ_RVT_TT_nldm_220123
+Wire Load Model Mode: segmented
+
+  Startpoint: a_1_ (input port)
+  Endpoint: f_126_ (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  a_1_ (in)                                0.00       0.00 f
+  U1133/Y (OR2x6_ASAP7_75t_R)             22.52      22.52 f
+  U1770/Y (NAND2xp5_ASAP7_75t_R)           9.68      32.20 r
+  U1769/Y (NAND2xp5_ASAP7_75t_R)          10.57      42.77 f
+  U1135/Y (BUFx5_ASAP7_75t_R)             25.03      67.79 f
+  U2017/Y (OA21x2_ASAP7_75t_R)            24.69      92.48 f
+  U1764/Y (AOI21x1_ASAP7_75t_R)           11.49     103.97 r
+  U1511/Y (BUFx5_ASAP7_75t_R)             22.60     126.57 r
+  U1510/Y (BUFx12f_ASAP7_75t_R)           16.83     143.40 r
+  U1631/Y (INVx6_ASAP7_75t_R)              5.72     149.12 f
+  U2016/Y (OR2x2_ASAP7_75t_R)             21.42     170.54 f
+  U1505/Y (AOI22x1_ASAP7_75t_R)           13.51     184.06 r
+  U1136/Y (BUFx5_ASAP7_75t_R)             24.81     208.86 r
+  U1137/Y (INVx6_ASAP7_75t_R)              8.08     216.94 f
+  U1506/Y (OAI21x1_ASAP7_75t_R)           10.34     227.28 r
+  U1758/Y (NAND2xp5_ASAP7_75t_R)          10.75     238.03 f
+  U1757/Y (BUFx5_ASAP7_75t_R)             25.09     263.11 f
+  U2015/Y (OA21x2_ASAP7_75t_R)            24.69     287.80 f
+  U1760/Y (AOI21x1_ASAP7_75t_R)           11.49     299.29 r
+  U1260/Y (BUFx5_ASAP7_75t_R)             22.34     321.63 r
+  U2014/Y (A2O1A1Ixp33_ASAP7_75t_R)       10.48     332.11 f
+  U1763/Y (OAI21xp5_ASAP7_75t_R)          12.57     344.68 r
+  U1633/Y (BUFx2_ASAP7_75t_R)             20.11     364.79 r
+  U1632/Y (BUFx6f_ASAP7_75t_R)            15.82     380.61 r
+  U1009/Y (INVx2_ASAP7_75t_R)              4.97     385.58 f
+  U1695/Y (OA22x2_ASAP7_75t_R)            25.16     410.74 f
+  U1568/Y (BUFx6f_ASAP7_75t_R)            17.54     428.28 f
+  U1751/Y (OA22x2_ASAP7_75t_R)            26.02     454.30 f
+  U1516/Y (BUFx6f_ASAP7_75t_R)            17.58     471.88 f
+  U1753/Y (OA22x2_ASAP7_75t_R)            26.06     497.94 f
+  U1507/Y (BUFx6f_ASAP7_75t_R)            17.54     515.48 f
+  U1755/Y (OA22x2_ASAP7_75t_R)            26.02     541.50 f
+  U1509/Y (BUFx6f_ASAP7_75t_R)            17.58     559.08 f
+  U1639/Y (OA22x2_ASAP7_75t_R)            26.06     585.14 f
+  U1622/Y (BUFx6f_ASAP7_75t_R)            17.58     602.71 f
+  U1694/Y (OA22x2_ASAP7_75t_R)            26.06     628.77 f
+  U1567/Y (BUFx6f_ASAP7_75t_R)            17.58     646.35 f
+  U1692/Y (OA22x2_ASAP7_75t_R)            26.06     672.41 f
+  U1577/Y (BUFx6f_ASAP7_75t_R)            17.58     689.99 f
+  U1690/Y (OA22x2_ASAP7_75t_R)            26.06     716.05 f
+  U1575/Y (BUFx6f_ASAP7_75t_R)            17.58     733.63 f
+  U1699/Y (OA22x2_ASAP7_75t_R)            26.06     759.69 f
+  U1560/Y (BUFx6f_ASAP7_75t_R)            17.58     777.26 f
+  U1637/Y (OA22x2_ASAP7_75t_R)            26.06     803.32 f
+  U1620/Y (BUFx6f_ASAP7_75t_R)            17.58     820.90 f
+  U1698/Y (OA22x2_ASAP7_75t_R)            26.06     846.96 f
+  U1571/Y (BUFx6f_ASAP7_75t_R)            17.58     864.54 f
+  U1646/Y (OA22x2_ASAP7_75t_R)            26.06     890.60 f
+  U1615/Y (BUFx6f_ASAP7_75t_R)            17.58     908.18 f
+  U1697/Y (OA22x2_ASAP7_75t_R)            26.06     934.24 f
+  U1570/Y (BUFx6f_ASAP7_75t_R)            17.58     951.81 f
+  U1645/Y (OA22x2_ASAP7_75t_R)            26.06     977.88 f
+  U1614/Y (BUFx6f_ASAP7_75t_R)            17.58     995.45 f
+  U1696/Y (OA22x2_ASAP7_75t_R)            26.06    1021.51 f
+  U1569/Y (BUFx6f_ASAP7_75t_R)            17.58    1039.09 f
+  U1701/Y (OA22x2_ASAP7_75t_R)            26.06    1065.15 f
+  U1562/Y (BUFx6f_ASAP7_75t_R)            17.58    1082.73 f
+  U1707/Y (OA22x2_ASAP7_75t_R)            26.06    1108.79 f
+  U1556/Y (BUFx6f_ASAP7_75t_R)            17.58    1126.37 f
+  U1636/Y (OA22x2_ASAP7_75t_R)            26.06    1152.43 f
+  U1626/Y (BUFx6f_ASAP7_75t_R)            17.58    1170.00 f
+  U1706/Y (OA22x2_ASAP7_75t_R)            26.06    1196.06 f
+  U1555/Y (BUFx6f_ASAP7_75t_R)            17.58    1213.64 f
+  U1644/Y (OA22x2_ASAP7_75t_R)            26.06    1239.70 f
+  U1625/Y (BUFx6f_ASAP7_75t_R)            17.58    1257.28 f
+  U1705/Y (OA22x2_ASAP7_75t_R)            26.06    1283.34 f
+  U1554/Y (BUFx6f_ASAP7_75t_R)            17.58    1300.92 f
+  U1643/Y (OA22x2_ASAP7_75t_R)            26.06    1326.98 f
+  U1624/Y (BUFx6f_ASAP7_75t_R)            17.58    1344.55 f
+  U1704/Y (OA22x2_ASAP7_75t_R)            26.06    1370.61 f
+  U1565/Y (BUFx6f_ASAP7_75t_R)            17.58    1388.19 f
+  U1642/Y (OA22x2_ASAP7_75t_R)            26.06    1414.25 f
+  U1623/Y (BUFx6f_ASAP7_75t_R)            17.58    1431.83 f
+  U1703/Y (OA22x2_ASAP7_75t_R)            26.06    1457.89 f
+  U1564/Y (BUFx6f_ASAP7_75t_R)            17.58    1475.47 f
+  U1653/Y (OA22x2_ASAP7_75t_R)            26.06    1501.53 f
+  U1610/Y (BUFx6f_ASAP7_75t_R)            17.58    1519.10 f
+  U1702/Y (OA22x2_ASAP7_75t_R)            26.06    1545.16 f
+  U1563/Y (BUFx6f_ASAP7_75t_R)            17.58    1562.74 f
+  U1652/Y (OA22x2_ASAP7_75t_R)            26.06    1588.80 f
+  U1609/Y (BUFx6f_ASAP7_75t_R)            17.58    1606.38 f
+  U1713/Y (OA22x2_ASAP7_75t_R)            26.06    1632.44 f
+  U1550/Y (BUFx6f_ASAP7_75t_R)            17.58    1650.02 f
+  U1651/Y (OA22x2_ASAP7_75t_R)            26.06    1676.08 f
+  U1608/Y (BUFx6f_ASAP7_75t_R)            17.58    1693.65 f
+  U1712/Y (OA22x2_ASAP7_75t_R)            26.06    1719.71 f
+  U1549/Y (BUFx6f_ASAP7_75t_R)            17.58    1737.29 f
+  U1650/Y (OA22x2_ASAP7_75t_R)            26.06    1763.35 f
+  U1619/Y (BUFx6f_ASAP7_75t_R)            17.58    1780.93 f
+  U1711/Y (OA22x2_ASAP7_75t_R)            26.06    1806.99 f
+  U1548/Y (BUFx6f_ASAP7_75t_R)            17.58    1824.57 f
+  U1649/Y (OA22x2_ASAP7_75t_R)            26.06    1850.63 f
+  U1618/Y (BUFx6f_ASAP7_75t_R)            17.58    1868.20 f
+  U1710/Y (OA22x2_ASAP7_75t_R)            26.06    1894.26 f
+  U1559/Y (BUFx6f_ASAP7_75t_R)            17.58    1911.84 f
+  U1648/Y (OA22x2_ASAP7_75t_R)            26.06    1937.90 f
+  U1617/Y (BUFx6f_ASAP7_75t_R)            17.58    1955.48 f
+  U1709/Y (OA22x2_ASAP7_75t_R)            26.06    1981.54 f
+  U1558/Y (BUFx6f_ASAP7_75t_R)            17.58    1999.12 f
+  U1659/Y (OA22x2_ASAP7_75t_R)            26.06    2025.18 f
+  U1604/Y (BUFx6f_ASAP7_75t_R)            17.58    2042.75 f
+  U1708/Y (OA22x2_ASAP7_75t_R)            26.06    2068.81 f
+  U1557/Y (BUFx6f_ASAP7_75t_R)            17.58    2086.39 f
+  U1658/Y (OA22x2_ASAP7_75t_R)            26.06    2112.45 f
+  U1603/Y (BUFx6f_ASAP7_75t_R)            17.58    2130.03 f
+  U1719/Y (OA22x2_ASAP7_75t_R)            26.06    2156.09 f
+  U1544/Y (BUFx6f_ASAP7_75t_R)            17.58    2173.67 f
+  U1657/Y (OA22x2_ASAP7_75t_R)            26.06    2199.73 f
+  U1602/Y (BUFx6f_ASAP7_75t_R)            17.58    2217.31 f
+  U1718/Y (OA22x2_ASAP7_75t_R)            26.06    2243.37 f
+  U1543/Y (BUFx6f_ASAP7_75t_R)            17.58    2260.94 f
+  U1656/Y (OA22x2_ASAP7_75t_R)            26.06    2287.00 f
+  U1613/Y (BUFx6f_ASAP7_75t_R)            17.58    2304.58 f
+  U1717/Y (OA22x2_ASAP7_75t_R)            26.06    2330.64 f
+  U1542/Y (BUFx6f_ASAP7_75t_R)            17.58    2348.22 f
+  U1655/Y (OA22x2_ASAP7_75t_R)            26.06    2374.28 f
+  U1612/Y (BUFx6f_ASAP7_75t_R)            17.58    2391.86 f
+  U1716/Y (OA22x2_ASAP7_75t_R)            26.06    2417.92 f
+  U1553/Y (BUFx6f_ASAP7_75t_R)            17.58    2435.49 f
+  U1654/Y (OA22x2_ASAP7_75t_R)            26.06    2461.55 f
+  U1611/Y (BUFx6f_ASAP7_75t_R)            17.58    2479.13 f
+  U1715/Y (OA22x2_ASAP7_75t_R)            26.06    2505.19 f
+  U1552/Y (BUFx6f_ASAP7_75t_R)            17.58    2522.77 f
+  U1665/Y (OA22x2_ASAP7_75t_R)            26.06    2548.83 f
+  U1598/Y (BUFx6f_ASAP7_75t_R)            17.58    2566.41 f
+  U1714/Y (OA22x2_ASAP7_75t_R)            26.06    2592.47 f
+  U1551/Y (BUFx6f_ASAP7_75t_R)            17.58    2610.04 f
+  U1664/Y (OA22x2_ASAP7_75t_R)            26.06    2636.10 f
+  U1597/Y (BUFx6f_ASAP7_75t_R)            17.58    2653.68 f
+  U1725/Y (OA22x2_ASAP7_75t_R)            26.06    2679.74 f
+  U1538/Y (BUFx6f_ASAP7_75t_R)            17.58    2697.32 f
+  U1663/Y (OA22x2_ASAP7_75t_R)            26.06    2723.38 f
+  U1596/Y (BUFx6f_ASAP7_75t_R)            17.58    2740.96 f
+  U1724/Y (OA22x2_ASAP7_75t_R)            26.06    2767.02 f
+  U1537/Y (BUFx6f_ASAP7_75t_R)            17.58    2784.60 f
+  U1662/Y (OA22x2_ASAP7_75t_R)            26.06    2810.66 f
+  U1607/Y (BUFx6f_ASAP7_75t_R)            17.58    2828.23 f
+  U1723/Y (OA22x2_ASAP7_75t_R)            26.06    2854.29 f
+  U1536/Y (BUFx6f_ASAP7_75t_R)            17.58    2871.87 f
+  U1661/Y (OA22x2_ASAP7_75t_R)            26.06    2897.93 f
+  U1606/Y (BUFx6f_ASAP7_75t_R)            17.58    2915.51 f
+  U1722/Y (OA22x2_ASAP7_75t_R)            26.06    2941.57 f
+  U1547/Y (BUFx6f_ASAP7_75t_R)            17.58    2959.15 f
+  U1660/Y (OA22x2_ASAP7_75t_R)            26.06    2985.21 f
+  U1605/Y (BUFx6f_ASAP7_75t_R)            17.58    3002.78 f
+  U1721/Y (OA22x2_ASAP7_75t_R)            26.06    3028.84 f
+  U1546/Y (BUFx6f_ASAP7_75t_R)            17.58    3046.42 f
+  U1671/Y (OA22x2_ASAP7_75t_R)            26.06    3072.48 f
+  U1592/Y (BUFx6f_ASAP7_75t_R)            17.58    3090.06 f
+  U1720/Y (OA22x2_ASAP7_75t_R)            26.06    3116.12 f
+  U1545/Y (BUFx6f_ASAP7_75t_R)            17.58    3133.70 f
+  U1670/Y (OA22x2_ASAP7_75t_R)            26.06    3159.76 f
+  U1591/Y (BUFx6f_ASAP7_75t_R)            17.58    3177.33 f
+  U1731/Y (OA22x2_ASAP7_75t_R)            26.06    3203.39 f
+  U1532/Y (BUFx6f_ASAP7_75t_R)            17.58    3220.97 f
+  U1669/Y (OA22x2_ASAP7_75t_R)            26.06    3247.03 f
+  U1590/Y (BUFx6f_ASAP7_75t_R)            17.58    3264.61 f
+  U1730/Y (OA22x2_ASAP7_75t_R)            26.06    3290.67 f
+  U1531/Y (BUFx6f_ASAP7_75t_R)            17.58    3308.25 f
+  U1668/Y (OA22x2_ASAP7_75t_R)            26.06    3334.31 f
+  U1601/Y (BUFx6f_ASAP7_75t_R)            17.58    3351.89 f
+  U1729/Y (OA22x2_ASAP7_75t_R)            26.06    3377.95 f
+  U1530/Y (BUFx6f_ASAP7_75t_R)            17.58    3395.52 f
+  U1667/Y (OA22x2_ASAP7_75t_R)            26.06    3421.58 f
+  U1600/Y (BUFx6f_ASAP7_75t_R)            17.58    3439.16 f
+  U1728/Y (OA22x2_ASAP7_75t_R)            26.06    3465.22 f
+  U1541/Y (BUFx6f_ASAP7_75t_R)            17.58    3482.80 f
+  U1666/Y (OA22x2_ASAP7_75t_R)            26.06    3508.86 f
+  U1599/Y (BUFx6f_ASAP7_75t_R)            17.58    3526.44 f
+  U1727/Y (OA22x2_ASAP7_75t_R)            26.06    3552.50 f
+  U1540/Y (BUFx6f_ASAP7_75t_R)            17.58    3570.07 f
+  U1677/Y (OA22x2_ASAP7_75t_R)            26.06    3596.13 f
+  U1586/Y (BUFx6f_ASAP7_75t_R)            17.58    3613.71 f
+  U1726/Y (OA22x2_ASAP7_75t_R)            26.06    3639.77 f
+  U1539/Y (BUFx6f_ASAP7_75t_R)            17.58    3657.35 f
+  U1676/Y (OA22x2_ASAP7_75t_R)            26.06    3683.41 f
+  U1585/Y (BUFx6f_ASAP7_75t_R)            17.58    3700.99 f
+  U1737/Y (OA22x2_ASAP7_75t_R)            26.06    3727.05 f
+  U1526/Y (BUFx6f_ASAP7_75t_R)            17.58    3744.62 f
+  U1675/Y (OA22x2_ASAP7_75t_R)            26.06    3770.68 f
+  U1584/Y (BUFx6f_ASAP7_75t_R)            17.58    3788.26 f
+  U1736/Y (OA22x2_ASAP7_75t_R)            26.06    3814.32 f
+  U1525/Y (BUFx6f_ASAP7_75t_R)            17.58    3831.90 f
+  U1674/Y (OA22x2_ASAP7_75t_R)            26.06    3857.96 f
+  U1595/Y (BUFx6f_ASAP7_75t_R)            17.58    3875.54 f
+  U1735/Y (OA22x2_ASAP7_75t_R)            26.06    3901.60 f
+  U1524/Y (BUFx6f_ASAP7_75t_R)            17.58    3919.18 f
+  U1673/Y (OA22x2_ASAP7_75t_R)            26.06    3945.24 f
+  U1594/Y (BUFx6f_ASAP7_75t_R)            17.58    3962.81 f
+  U1734/Y (OA22x2_ASAP7_75t_R)            26.06    3988.87 f
+  U1535/Y (BUFx6f_ASAP7_75t_R)            17.58    4006.45 f
+  U1672/Y (OA22x2_ASAP7_75t_R)            26.06    4032.51 f
+  U1593/Y (BUFx6f_ASAP7_75t_R)            17.58    4050.09 f
+  U1733/Y (OA22x2_ASAP7_75t_R)            26.06    4076.15 f
+  U1534/Y (BUFx6f_ASAP7_75t_R)            17.58    4093.73 f
+  U1683/Y (OA22x2_ASAP7_75t_R)            26.06    4119.79 f
+  U1580/Y (BUFx6f_ASAP7_75t_R)            17.58    4137.36 f
+  U1732/Y (OA22x2_ASAP7_75t_R)            26.06    4163.42 f
+  U1533/Y (BUFx6f_ASAP7_75t_R)            17.58    4181.00 f
+  U1682/Y (OA22x2_ASAP7_75t_R)            26.06    4207.06 f
+  U1579/Y (BUFx6f_ASAP7_75t_R)            17.58    4224.64 f
+  U1743/Y (OA22x2_ASAP7_75t_R)            26.06    4250.70 f
+  U1520/Y (BUFx6f_ASAP7_75t_R)            17.58    4268.28 f
+  U1681/Y (OA22x2_ASAP7_75t_R)            26.06    4294.34 f
+  U1578/Y (BUFx6f_ASAP7_75t_R)            17.58    4311.91 f
+  U1742/Y (OA22x2_ASAP7_75t_R)            26.06    4337.98 f
+  U1519/Y (BUFx6f_ASAP7_75t_R)            17.58    4355.55 f
+  U1750/Y (OA22x2_ASAP7_75t_R)            26.06    4381.61 f
+  U1515/Y (BUFx6f_ASAP7_75t_R)            17.58    4399.19 f
+  U1752/Y (OA22x2_ASAP7_75t_R)            26.06    4425.25 f
+  U1517/Y (BUFx6f_ASAP7_75t_R)            17.58    4442.83 f
+  U1754/Y (OA22x2_ASAP7_75t_R)            26.06    4468.89 f
+  U1508/Y (BUFx6f_ASAP7_75t_R)            17.58    4486.47 f
+  U1638/Y (OA22x2_ASAP7_75t_R)            26.06    4512.53 f
+  U1621/Y (BUFx6f_ASAP7_75t_R)            17.58    4530.10 f
+  U1693/Y (OA22x2_ASAP7_75t_R)            26.06    4556.16 f
+  U1566/Y (BUFx6f_ASAP7_75t_R)            17.58    4573.74 f
+  U1691/Y (OA22x2_ASAP7_75t_R)            26.06    4599.80 f
+  U1576/Y (BUFx6f_ASAP7_75t_R)            17.58    4617.38 f
+  U1700/Y (OA22x2_ASAP7_75t_R)            26.06    4643.44 f
+  U1561/Y (BUFx6f_ASAP7_75t_R)            17.58    4661.02 f
+  U1741/Y (OA22x2_ASAP7_75t_R)            26.06    4687.08 f
+  U1518/Y (BUFx6f_ASAP7_75t_R)            17.58    4704.65 f
+  U1647/Y (OA22x2_ASAP7_75t_R)            26.06    4730.71 f
+  U1616/Y (BUFx6f_ASAP7_75t_R)            17.58    4748.29 f
+  U1740/Y (OA22x2_ASAP7_75t_R)            26.06    4774.35 f
+  U1529/Y (BUFx6f_ASAP7_75t_R)            17.58    4791.93 f
+  U1680/Y (OA22x2_ASAP7_75t_R)            26.06    4817.99 f
+  U1589/Y (BUFx6f_ASAP7_75t_R)            17.58    4835.57 f
+  U1739/Y (OA22x2_ASAP7_75t_R)            26.06    4861.63 f
+  U1528/Y (BUFx6f_ASAP7_75t_R)            17.58    4879.20 f
+  U1679/Y (OA22x2_ASAP7_75t_R)            26.06    4905.27 f
+  U1588/Y (BUFx6f_ASAP7_75t_R)            17.58    4922.84 f
+  U1738/Y (OA22x2_ASAP7_75t_R)            26.06    4948.90 f
+  U1527/Y (BUFx6f_ASAP7_75t_R)            17.58    4966.48 f
+  U1678/Y (OA22x2_ASAP7_75t_R)            26.06    4992.54 f
+  U1587/Y (BUFx6f_ASAP7_75t_R)            17.58    5010.12 f
+  U1749/Y (OA22x2_ASAP7_75t_R)            26.06    5036.18 f
+  U1514/Y (BUFx6f_ASAP7_75t_R)            17.58    5053.76 f
+  U1689/Y (OA22x2_ASAP7_75t_R)            26.06    5079.82 f
+  U1574/Y (BUFx6f_ASAP7_75t_R)            17.58    5097.39 f
+  U1748/Y (OA22x2_ASAP7_75t_R)            26.06    5123.45 f
+  U1513/Y (BUFx6f_ASAP7_75t_R)            17.58    5141.03 f
+  U1688/Y (OA22x2_ASAP7_75t_R)            26.06    5167.09 f
+  U1573/Y (BUFx6f_ASAP7_75t_R)            17.58    5184.67 f
+  U1747/Y (OA22x2_ASAP7_75t_R)            26.06    5210.73 f
+  U1512/Y (BUFx6f_ASAP7_75t_R)            17.58    5228.31 f
+  U1687/Y (OA22x2_ASAP7_75t_R)            26.06    5254.37 f
+  U1572/Y (BUFx6f_ASAP7_75t_R)            17.58    5271.94 f
+  U1746/Y (OA22x2_ASAP7_75t_R)            26.06    5298.00 f
+  U1523/Y (BUFx6f_ASAP7_75t_R)            17.54    5315.54 f
+  U1686/Y (OA22x2_ASAP7_75t_R)            26.02    5341.56 f
+  U1583/Y (BUFx6f_ASAP7_75t_R)            17.54    5359.10 f
+  U1745/Y (OA22x2_ASAP7_75t_R)            26.02    5385.12 f
+  U1522/Y (BUFx6f_ASAP7_75t_R)            17.54    5402.67 f
+  U1685/Y (OA22x2_ASAP7_75t_R)            26.02    5428.69 f
+  U1582/Y (BUFx6f_ASAP7_75t_R)            17.54    5446.23 f
+  U1744/Y (OA22x2_ASAP7_75t_R)            26.02    5472.25 f
+  U1521/Y (BUFx6f_ASAP7_75t_R)            17.58    5489.82 f
+  U1684/Y (OA22x2_ASAP7_75t_R)            26.06    5515.88 f
+  U1581/Y (BUFx6f_ASAP7_75t_R)            17.54    5533.42 f
+  U1628/Y (OA22x2_ASAP7_75t_R)            26.02    5559.44 f
+  U1263/Y (BUFx6f_ASAP7_75t_R)            18.01    5577.45 f
+  U1497/Y (AO32x1_ASAP7_75t_R)            27.34    5604.79 f
+  U1498/Y (INVxp33_ASAP7_75t_R)            6.25    5611.04 r
+  f_126_ (out)                             0.00    5611.04 r
+  data arrival time                                5611.04
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

@@ -1,0 +1,28 @@
+libs:
+- asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120
+- asap7sc7p5t_AO_RVT_TT_nldm_211120
+- asap7sc7p5t_INVBUF_RVT_TT_nldm_220122
+- asap7sc7p5t_OA_RVT_TT_nldm_211120
+- asap7sc7p5t_SEQ_RVT_TT_nldm_220123
+- manual
+port_prefixes:
+  input:
+  - .A
+  - .B
+  - .C
+  - .D
+  - .E
+  - .CI
+  - .H
+  output:
+  - .Y
+  - .QN
+  - .L
+  - .SN
+  - .CON
+external_sp_inputs_spec:
+  N1: 0.49897
+  N2: 0.497166
+  N3: 0.498454
+  N6: 0.500072
+  N7: 0.50138

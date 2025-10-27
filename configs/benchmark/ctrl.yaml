@@ -1,0 +1,31 @@
+# Warning: SAIF file '/home/syq/spcal/src/spcal/tools/../../../data/saif/ctrl.saif' not found. Init as 0.5.
+libs:
+- asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120
+- asap7sc7p5t_AO_RVT_TT_nldm_211120
+- asap7sc7p5t_INVBUF_RVT_TT_nldm_220122
+- asap7sc7p5t_OA_RVT_TT_nldm_211120
+- asap7sc7p5t_SEQ_RVT_TT_nldm_220123
+- manual
+port_prefixes:
+  input:
+  - .A
+  - .B
+  - .C
+  - .D
+  - .E
+  - .CI
+  - .H
+  output:
+  - .Y
+  - .QN
+  - .L
+  - .SN
+  - .CON
+external_sp_inputs_spec:
+  opcode_0_: 0.5
+  opcode_1_: 0.5
+  opcode_2_: 0.5
+  opcode_3_: 0.5
+  opcode_4_: 0.5
+  op_ext_0_: 0.5
+  op_ext_1_: 0.5

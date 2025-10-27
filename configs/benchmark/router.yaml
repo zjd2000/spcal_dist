@@ -1,0 +1,84 @@
+# Warning: SAIF file '/home/syq/spcal/src/spcal/tools/../../../data/saif/router.saif' not found. Init as 0.5.
+libs:
+- asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120
+- asap7sc7p5t_AO_RVT_TT_nldm_211120
+- asap7sc7p5t_INVBUF_RVT_TT_nldm_220122
+- asap7sc7p5t_OA_RVT_TT_nldm_211120
+- asap7sc7p5t_SEQ_RVT_TT_nldm_220123
+- manual
+port_prefixes:
+  input:
+  - .A
+  - .B
+  - .C
+  - .D
+  - .E
+  - .CI
+  - .H
+  output:
+  - .Y
+  - .QN
+  - .L
+  - .SN
+  - .CON
+external_sp_inputs_spec:
+  dest_x_0_: 0.5
+  dest_x_1_: 0.5
+  dest_x_2_: 0.5
+  dest_x_3_: 0.5
+  dest_x_4_: 0.5
+  dest_x_5_: 0.5
+  dest_x_6_: 0.5
+  dest_x_7_: 0.5
+  dest_x_8_: 0.5
+  dest_x_9_: 0.5
+  dest_x_10_: 0.5
+  dest_x_11_: 0.5
+  dest_x_12_: 0.5
+  dest_x_13_: 0.5
+  dest_x_14_: 0.5
+  dest_x_15_: 0.5
+  dest_x_16_: 0.5
+  dest_x_17_: 0.5
+  dest_x_18_: 0.5
+  dest_x_19_: 0.5
+  dest_x_20_: 0.5
+  dest_x_21_: 0.5
+  dest_x_22_: 0.5
+  dest_x_23_: 0.5
+  dest_x_24_: 0.5
+  dest_x_25_: 0.5
+  dest_x_26_: 0.5
+  dest_x_27_: 0.5
+  dest_x_28_: 0.5
+  dest_x_29_: 0.5
+  dest_y_0_: 0.5
+  dest_y_1_: 0.5
+  dest_y_2_: 0.5
+  dest_y_3_: 0.5
+  dest_y_4_: 0.5
+  dest_y_5_: 0.5
+  dest_y_6_: 0.5
+  dest_y_7_: 0.5
+  dest_y_8_: 0.5
+  dest_y_9_: 0.5
+  dest_y_10_: 0.5
+  dest_y_11_: 0.5
+  dest_y_12_: 0.5
+  dest_y_13_: 0.5
+  dest_y_14_: 0.5
+  dest_y_15_: 0.5
+  dest_y_16_: 0.5
+  dest_y_17_: 0.5
+  dest_y_18_: 0.5
+  dest_y_19_: 0.5
+  dest_y_20_: 0.5
+  dest_y_21_: 0.5
+  dest_y_22_: 0.5
+  dest_y_23_: 0.5
+  dest_y_24_: 0.5
+  dest_y_25_: 0.5
+  dest_y_26_: 0.5
+  dest_y_27_: 0.5
+  dest_y_28_: 0.5
+  dest_y_29_: 0.5

@@ -1,0 +1,16 @@
+/*.png
+/*.html
+/*.lock
+/*.txt
+/.history
+/*.bug.log
+__pycache__/
+tmp/
+data/spice/*.sp
+src/spcal/tools/gen_spice/waveforms*
+.venv/
+__pycache__/
+outputs/
+logs/
+.pyi/
+.so/

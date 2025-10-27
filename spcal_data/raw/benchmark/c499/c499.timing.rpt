@@ -1,0 +1,49 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : c499
+Version: O-2018.06-SP1
+Date   : Fri Feb  7 23:14:30 2025
+****************************************
+
+Operating Conditions: PVT_0P7V_25C   Library: asap7sc7p5t_SEQ_RVT_TT_nldm_220123
+Wire Load Model Mode: segmented
+
+  Startpoint: N9 (input port)
+  Endpoint: N741 (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  N9 (in)                                  0.00       0.00 r
+  U345/Y (XOR2x2_ASAP7_75t_R)             24.94      24.94 f
+  U280/Y (BUFx6f_ASAP7_75t_R)             18.03      42.96 f
+  U344/Y (XOR2x2_ASAP7_75t_R)             33.67      76.64 r
+  U354/SN (FAx1_ASAP7_75t_R)              35.40     112.03 f
+  U322/Y (BUFx4_ASAP7_75t_R)              31.19     143.22 f
+  U352/SN (FAx1_ASAP7_75t_R)              31.93     175.15 r
+  U278/Y (BUFx4_ASAP7_75t_R)              32.04     207.20 r
+  U316/Y (INVx4_ASAP7_75t_R)               7.54     214.74 f
+  U195/Y (BUFx16f_ASAP7_75t_R)            20.71     235.45 f
+  U162/Y (INVx13_ASAP7_75t_R)             10.12     245.57 r
+  U176/Y (NOR2x2_ASAP7_75t_R)              8.92     254.49 f
+  U339/Y (OA33x2_ASAP7_75t_R)             40.83     295.32 f
+  U182/Y (BUFx6f_ASAP7_75t_R)             20.33     315.65 f
+  U232/Y (INVx6_ASAP7_75t_R)               7.20     322.85 r
+  U235/Y (AND5x2_ASAP7_75t_R)             35.01     357.86 r
+  U288/Y (BUFx10_ASAP7_75t_R)             23.81     381.68 r
+  U201/Y (INVx11_ASAP7_75t_R)              8.54     390.22 f
+  U209/Y (NOR2x2_ASAP7_75t_R)              8.57     398.78 r
+  U249/Y (XNOR2x2_ASAP7_75t_R)            31.85     430.63 f
+  N741 (out)                               0.00     430.63 f
+  data arrival time                                 430.63
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

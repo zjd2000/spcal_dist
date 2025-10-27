@@ -1,0 +1,310 @@
+{
+  "cells": [
+    {
+      "cell_name": "O2A1O1Ixp33_ASAP7_75t_R",
+      "output_pins": [
+        {
+          "pin_name": "Y",
+          "function": "(!A1 * !A2 * !C) + (!B * !C)"
+        }
+      ]
+    },
+    {
+      "cell_name": "O2A1O1Ixp5_ASAP7_75t_R",
+      "output_pins": [
+        {
+          "pin_name": "Y",
+          "function": "(!A1 * !A2 * !C) + (!B * !C)"
+        }
+      ]
+    },
+    {
+      "cell_name": "OA211x2_ASAP7_75t_R",
+      "output_pins": [
+        {
+          "pin_name": "Y",
+          "function": "(A1 * B * C) + (A2 * B * C)"
+        }
+      ]
+    },
+    {
+      "cell_name": "OA21x2_ASAP7_75t_R",
+      "output_pins": [
+        {
+          "pin_name": "Y",
+          "function": "(A1 * B) + (A2 * B)"
+        }
+      ]
+    },
+    {
+      "cell_name": "OA221x2_ASAP7_75t_R",
+      "output_pins": [
+        {
+          "pin_name": "Y",
+          "function": "(A1 * B1 * C) + (A1 * B2 * C) + (A2 * B1 * C) + (A2 * B2 * C)"
+        }
+      ]
+    },
+    {
+      "cell_name": "OA222x2_ASAP7_75t_R",
+      "output_pins": [
+        {
+          "pin_name": "Y",
+          "function": "(A1 * B1 * C1) + (A1 * B1 * C2) + (A1 * B2 * C1) + (A1 * B2 * C2) + (A2 * B1 * C1) + (A2 * B1 * C2) + (A2 * B2 * C1) + (A2 * B2 * C2)"
+        }
+      ]
+    },
+    {
+      "cell_name": "OA22x2_ASAP7_75t_R",
+      "output_pins": [
+        {
+          "pin_name": "Y",
+          "function": "(A1 * B1) + (A1 * B2) + (A2 * B1) + (A2 * B2)"
+        }
+      ]
+    },
+    {
+      "cell_name": "OA31x2_ASAP7_75t_R",
+      "output_pins": [
+        {
+          "pin_name": "Y",
+          "function": "(A1 * B1) + (A2 * B1) + (A3 * B1)"
+        }
+      ]
+    },
+    {
+      "cell_name": "OA331x1_ASAP7_75t_R",
+      "output_pins": [
+        {
+          "pin_name": "Y",
+          "function": "(A1 * B1 * C1) + (A1 * B2 * C1) + (A1 * B3 * C1) + (A2 * B1 * C1) + (A2 * B2 * C1) + (A2 * B3 * C1) + (A3 * B1 * C1) + (A3 * B2 * C1) + (A3 * B3 * C1)"
+        }
+      ]
+    },
+    {
+      "cell_name": "OA331x2_ASAP7_75t_R",
+      "output_pins": [
+        {
+          "pin_name": "Y",
+          "function": "(A1 * B1 * C1) + (A1 * B2 * C1) + (A1 * B3 * C1) + (A2 * B1 * C1) + (A2 * B2 * C1) + (A2 * B3 * C1) + (A3 * B1 * C1) + (A3 * B2 * C1) + (A3 * B3 * C1)"
+        }
+      ]
+    },
+    {
+      "cell_name": "OA332x1_ASAP7_75t_R",
+      "output_pins": [
+        {
+          "pin_name": "Y",
+          "function": "(A1 * B1 * C1) + (A1 * B1 * C2) + (A1 * B2 * C1) + (A1 * B2 * C2) + (A1 * B3 * C1) + (A1 * B3 * C2) + (A2 * B1 * C1) + (A2 * B1 * C2) + (A2 * B2 * C1) + (A2 * B2 * C2) + (A2 * B3 * C1) + (A2 * B3 * C2) + (A3 * B1 * C1) + (A3 * B1 * C2) + (A3 * B2 * C1) + (A3 * B2 * C2) + (A3 * B3 * C1) + (A3 * B3 * C2)"
+        }
+      ]
+    },
+    {
+      "cell_name": "OA332x2_ASAP7_75t_R",
+      "output_pins": [
+        {
+          "pin_name": "Y",
+          "function": "(A1 * B1 * C1) + (A1 * B1 * C2) + (A1 * B2 * C1) + (A1 * B2 * C2) + (A1 * B3 * C1) + (A1 * B3 * C2) + (A2 * B1 * C1) + (A2 * B1 * C2) + (A2 * B2 * C1) + (A2 * B2 * C2) + (A2 * B3 * C1) + (A2 * B3 * C2) + (A3 * B1 * C1) + (A3 * B1 * C2) + (A3 * B2 * C1) + (A3 * B2 * C2) + (A3 * B3 * C1) + (A3 * B3 * C2)"
+        }
+      ]
+    },
+    {
+      "cell_name": "OA333x1_ASAP7_75t_R",
+      "output_pins": [
+        {
+          "pin_name": "Y",
+          "function": "(A1 * B1 * C1) + (A1 * B1 * C2) + (A1 * B1 * C3) + (A1 * B2 * C1) + (A1 * B2 * C2) + (A1 * B2 * C3) + (A1 * B3 * C1) + (A1 * B3 * C2) + (A1 * B3 * C3) + (A2 * B1 * C1) + (A2 * B1 * C2) + (A2 * B1 * C3) + (A2 * B2 * C1) + (A2 * B2 * C2) + (A2 * B2 * C3) + (A2 * B3 * C1) + (A2 * B3 * C2) + (A2 * B3 * C3) + (A3 * B1 * C1) + (A3 * B1 * C2) + (A3 * B1 * C3) + (A3 * B2 * C1) + (A3 * B2 * C2) + (A3 * B2 * C3) + (A3 * B3 * C1) + (A3 * B3 * C2) + (A3 * B3 * C3)"
+        }
+      ]
+    },
+    {
+      "cell_name": "OA333x2_ASAP7_75t_R",
+      "output_pins": [
+        {
+          "pin_name": "Y",
+          "function": "(A1 * B1 * C1) + (A1 * B1 * C2) + (A1 * B1 * C3) + (A1 * B2 * C1) + (A1 * B2 * C2) + (A1 * B2 * C3) + (A1 * B3 * C1) + (A1 * B3 * C2) + (A1 * B3 * C3) + (A2 * B1 * C1) + (A2 * B1 * C2) + (A2 * B1 * C3) + (A2 * B2 * C1) + (A2 * B2 * C2) + (A2 * B2 * C3) + (A2 * B3 * C1) + (A2 * B3 * C2) + (A2 * B3 * C3) + (A3 * B1 * C1) + (A3 * B1 * C2) + (A3 * B1 * C3) + (A3 * B2 * C1) + (A3 * B2 * C2) + (A3 * B2 * C3) + (A3 * B3 * C1) + (A3 * B3 * C2) + (A3 * B3 * C3)"
+        }
+      ]
+    },
+    {
+      "cell_name": "OA33x2_ASAP7_75t_R",
+      "output_pins": [
+        {
+          "pin_name": "Y",
+          "function": "(A1 * B1) + (A1 * B2) + (A1 * B3) + (A2 * B1) + (A2 * B2) + (A2 * B3) + (A3 * B1) + (A3 * B2) + (A3 * B3)"
+        }
+      ]
+    },
+    {
+      "cell_name": "OAI211xp5_ASAP7_75t_R",
+      "output_pins": [
+        {
+          "pin_name": "Y",
+          "function": "(!A1 * !A2) + (!B) + (!C)"
+        }
+      ]
+    },
+    {
+      "cell_name": "OAI21x1_ASAP7_75t_R",
+      "output_pins": [
+        {
+          "pin_name": "Y",
+          "function": "(!A1 * !A2) + (!B)"
+        }
+      ]
+    },
+    {
+      "cell_name": "OAI21xp33_ASAP7_75t_R",
+      "output_pins": [
+        {
+          "pin_name": "Y",
+          "function": "(!A1 * !A2) + (!B)"
+        }
+      ]
+    },
+    {
+      "cell_name": "OAI21xp5_ASAP7_75t_R",
+      "output_pins": [
+        {
+          "pin_name": "Y",
+          "function": "(!A1 * !A2) + (!B)"
+        }
+      ]
+    },
+    {
+      "cell_name": "OAI221xp5_ASAP7_75t_R",
+      "output_pins": [
+        {
+          "pin_name": "Y",
+          "function": "(!A1 * !A2) + (!B1 * !B2) + (!C)"
+        }
+      ]
+    },
+    {
+      "cell_name": "OAI222xp33_ASAP7_75t_R",
+      "output_pins": [
+        {
+          "pin_name": "Y",
+          "function": "(!A1 * !A2) + (!B1 * !B2) + (!C1 * !C2)"
+        }
+      ]
+    },
+    {
+      "cell_name": "OAI22x1_ASAP7_75t_R",
+      "output_pins": [
+        {
+          "pin_name": "Y",
+          "function": "(!A1 * !A2) + (!B1 * !B2)"
+        }
+      ]
+    },
+    {
+      "cell_name": "OAI22xp33_ASAP7_75t_R",
+      "output_pins": [
+        {
+          "pin_name": "Y",
+          "function": "(!A1 * !A2) + (!B1 * !B2)"
+        }
+      ]
+    },
+    {
+      "cell_name": "OAI22xp5_ASAP7_75t_R",
+      "output_pins": [
+        {
+          "pin_name": "Y",
+          "function": "(!A1 * !A2) + (!B1 * !B2)"
+        }
+      ]
+    },
+    {
+      "cell_name": "OAI311xp33_ASAP7_75t_R",
+      "output_pins": [
+        {
+          "pin_name": "Y",
+          "function": "(!A1 * !A2 * !A3) + (!B1) + (!C1)"
+        }
+      ]
+    },
+    {
+      "cell_name": "OAI31xp33_ASAP7_75t_R",
+      "output_pins": [
+        {
+          "pin_name": "Y",
+          "function": "(!A1 * !A2 * !A3) + (!B)"
+        }
+      ]
+    },
+    {
+      "cell_name": "OAI31xp67_ASAP7_75t_R",
+      "output_pins": [
+        {
+          "pin_name": "Y",
+          "function": "(!A1 * !A2 * !A3) + (!B)"
+        }
+      ]
+    },
+    {
+      "cell_name": "OAI321xp33_ASAP7_75t_R",
+      "output_pins": [
+        {
+          "pin_name": "Y",
+          "function": "(!A1 * !A2 * !A3) + (!B1 * !B2) + (!C)"
+        }
+      ]
+    },
+    {
+      "cell_name": "OAI322xp33_ASAP7_75t_R",
+      "output_pins": [
+        {
+          "pin_name": "Y",
+          "function": "(!A1 * !A2 * !A3) + (!B1 * !B2) + (!C1 * !C2)"
+        }
+      ]
+    },
+    {
+      "cell_name": "OAI32xp33_ASAP7_75t_R",
+      "output_pins": [
+        {
+          "pin_name": "Y",
+          "function": "(!A1 * !A2 * !A3) + (!B1 * !B2)"
+        }
+      ]
+    },
+    {
+      "cell_name": "OAI331xp33_ASAP7_75t_R",
+      "output_pins": [
+        {
+          "pin_name": "Y",
+          "function": "(!A1 * !A2 * !A3) + (!B1 * !B2 * !B3) + (!C1)"
+        }
+      ]
+    },
+    {
+      "cell_name": "OAI332xp33_ASAP7_75t_R",
+      "output_pins": [
+        {
+          "pin_name": "Y",
+          "function": "(!A1 * !A2 * !A3) + (!B1 * !B2 * !B3) + (!C1 * !C2)"
+        }
+      ]
+    },
+    {
+      "cell_name": "OAI333xp33_ASAP7_75t_R",
+      "output_pins": [
+        {
+          "pin_name": "Y",
+          "function": "(!A1 * !A2 * !A3) + (!B1 * !B2 * !B3) + (!C1 * !C2 * !C3)"
+        }
+      ]
+    },
+    {
+      "cell_name": "OAI33xp33_ASAP7_75t_R",
+      "output_pins": [
+        {
+          "pin_name": "Y",
+          "function": "(!A1 * !A2 * !A3) + (!B1 * !B2 * !B3)"
+        }
+      ]
+    }
+  ]
+}

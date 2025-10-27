@@ -1,0 +1,27 @@
+# Warning: SAIF file 'None' not found. Init as 0.5.
+libs:
+- asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120
+- asap7sc7p5t_AO_RVT_TT_nldm_211120
+- asap7sc7p5t_INVBUF_RVT_TT_nldm_220122
+- asap7sc7p5t_OA_RVT_TT_nldm_211120
+- asap7sc7p5t_SEQ_RVT_TT_nldm_220123
+- manual
+port_prefixes:
+  input:
+  - .A
+  - .B
+  - .C
+  - .D
+  - .E
+  - .CI
+  - .H
+  - .SETN
+  - .RESETN
+  output:
+  - .Y
+  - .QN
+  - .L
+  - .SN
+  - .CON
+  - .Q
+external_sp_inputs_spec: {}

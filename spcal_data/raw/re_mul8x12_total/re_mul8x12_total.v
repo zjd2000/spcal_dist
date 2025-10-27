@@ -1,0 +1,638 @@
+/////////////////////////////////////////////////////////////
+// Created by: Synopsys DC Expert(TM) in wire load mode
+// Version   : T-2022.03-SP2
+// Date      : Thu Mar 13 09:26:57 2025
+/////////////////////////////////////////////////////////////
+module add_4_cla ( 
+  input [3:0] a,
+  input [3:0] b,
+  output [3:0] sum,
+  output [3:0] g,
+  output [3:0] p,
+  input c_in,
+  output c_out
+);
+  // 原始wire定义添加前缀
+  wire add_4_cla_n59, add_4_cla_n60, add_4_cla_n61, add_4_cla_n17, add_4_cla_n18, 
+       add_4_cla_n20, add_4_cla_n21, add_4_cla_n22, add_4_cla_n23, add_4_cla_n24,
+       add_4_cla_n26, add_4_cla_n27, add_4_cla_n28, add_4_cla_n29, add_4_cla_n30,
+       add_4_cla_n31, add_4_cla_n33, add_4_cla_n34, add_4_cla_n35, add_4_cla_n36,
+       add_4_cla_n37, add_4_cla_n38, add_4_cla_n39, add_4_cla_n42, add_4_cla_n43,
+       add_4_cla_n44, add_4_cla_n45, add_4_cla_n46, add_4_cla_n47, add_4_cla_n48,
+       add_4_cla_n49, add_4_cla_n50, add_4_cla_n51, add_4_cla_n52, add_4_cla_n53,
+       add_4_cla_n54, add_4_cla_n55, add_4_cla_n56, add_4_cla_n57, add_4_cla_n58;
+
+  // 门级单元添加前缀
+  BUFx2_ASAP7_75t_R add_4_cla_U27 ( .A(add_4_cla_n56), .Y(add_4_cla_n20) );
+  BUFx4f_ASAP7_75t_R add_4_cla_U28 ( .A(add_4_cla_n22), .Y(add_4_cla_n33) );
+  BUFx2_ASAP7_75t_R add_4_cla_U29 ( .A(add_4_cla_n51), .Y(add_4_cla_n35) );
+  BUFx2_ASAP7_75t_R add_4_cla_U30 ( .A(add_4_cla_n54), .Y(add_4_cla_n26) );
+  BUFx4f_ASAP7_75t_R add_4_cla_U31 ( .A(add_4_cla_n57), .Y(add_4_cla_n18) );
+  BUFx2_ASAP7_75t_R add_4_cla_U32 ( .A(add_4_cla_n61), .Y(add_4_cla_n17) );
+  INVx3_ASAP7_75t_R add_4_cla_U33 ( .A(add_4_cla_n30), .Y(add_4_cla_n31) );
+  BUFx6f_ASAP7_75t_R add_4_cla_U34 ( .A(add_4_cla_n33), .Y(add_4_cla_n30) );
+  BUFx3_ASAP7_75t_R add_4_cla_U35 ( .A(add_4_cla_n52), .Y(add_4_cla_n22) );
+  BUFx2_ASAP7_75t_R add_4_cla_U36 ( .A(add_4_cla_n55), .Y(add_4_cla_n38) );
+  INVx2_ASAP7_75t_R add_4_cla_U37 ( .A(add_4_cla_n39), .Y(add_4_cla_n48) );
+  BUFx3_ASAP7_75t_R add_4_cla_U38 ( .A(add_4_cla_n53), .Y(add_4_cla_n39) );
+  AND2x2_ASAP7_75t_R add_4_cla_U39 ( .A(b[3]), .B(a[3]), .Y(g[3]) );
+  AND2x4_ASAP7_75t_R add_4_cla_U40 ( .A(b[0]), .B(a[0]), .Y(g[0]) );
+  AND2x4_ASAP7_75t_R add_4_cla_U41 ( .A(b[1]), .B(a[1]), .Y(g[1]) );
+  INVx2_ASAP7_75t_R add_4_cla_U42 ( .A(add_4_cla_n38), .Y(add_4_cla_n50) );
+  BUFx6f_ASAP7_75t_R add_4_cla_U43 ( .A(add_4_cla_n23), .Y(add_4_cla_n49) );
+  BUFx6f_ASAP7_75t_R add_4_cla_U44 ( .A(add_4_cla_n18), .Y(g[2]) );
+  BUFx4f_ASAP7_75t_R add_4_cla_U45 ( .A(add_4_cla_n17), .Y(add_4_cla_n21) );
+  BUFx6f_ASAP7_75t_R add_4_cla_U46 ( .A(add_4_cla_n21), .Y(add_4_cla_n24) );
+  BUFx4f_ASAP7_75t_R add_4_cla_U47 ( .A(add_4_cla_n20), .Y(add_4_cla_n23) );
+  BUFx6f_ASAP7_75t_R add_4_cla_U48 ( .A(add_4_cla_n24), .Y(p[1]) );
+  BUFx6f_ASAP7_75t_R add_4_cla_U49 ( .A(add_4_cla_n59), .Y(add_4_cla_n27) );
+  BUFx6f_ASAP7_75t_R add_4_cla_U50 ( .A(add_4_cla_n49), .Y(add_4_cla_n34) );
+  INVx3_ASAP7_75t_R add_4_cla_U51 ( .A(add_4_cla_n34), .Y(add_4_cla_n28) );
+  BUFx6f_ASAP7_75t_R add_4_cla_U52 ( .A(g[2]), .Y(add_4_cla_n46) );
+  INVx3_ASAP7_75t_R add_4_cla_U53 ( .A(add_4_cla_n46), .Y(add_4_cla_n29) );
+  INVx2_ASAP7_75t_R add_4_cla_U54 ( .A(add_4_cla_n36), .Y(add_4_cla_n43) );
+  BUFx6f_ASAP7_75t_R add_4_cla_U55 ( .A(add_4_cla_n26), .Y(p[0]) );
+  BUFx6f_ASAP7_75t_R add_4_cla_U56 ( .A(p[0]), .Y(add_4_cla_n36) );
+  BUFx6f_ASAP7_75t_R add_4_cla_U57 ( .A(add_4_cla_n35), .Y(add_4_cla_n37) );
+  BUFx4f_ASAP7_75t_R add_4_cla_U58 ( .A(add_4_cla_n28), .Y(add_4_cla_n60) );
+  INVx2_ASAP7_75t_R add_4_cla_U59 ( .A(add_4_cla_n60), .Y(p[2]) );
+  BUFx4f_ASAP7_75t_R add_4_cla_U60 ( .A(add_4_cla_n50), .Y(add_4_cla_n59) );
+  INVx2_ASAP7_75t_R add_4_cla_U61 ( .A(add_4_cla_n27), .Y(p[3]) );
+  BUFx6f_ASAP7_75t_R add_4_cla_U62 ( .A(add_4_cla_n37), .Y(add_4_cla_n42) );
+  OA21x2_ASAP7_75t_R add_4_cla_U63 ( .A1(b[0]), .A2(a[0]), .B(add_4_cla_n47), .Y(add_4_cla_n54) );
+  NAND2x2_ASAP7_75t_R add_4_cla_U64 ( .A(b[3]), .B(a[3]), .Y(add_4_cla_n44) );
+  NAND2x1p5_ASAP7_75t_R add_4_cla_U65 ( .A(b[3]), .B(a[3]), .Y(add_4_cla_n45) );
+  AND2x4_ASAP7_75t_R add_4_cla_U66 ( .A(b[2]), .B(a[2]), .Y(add_4_cla_n57) );
+  NAND2x2_ASAP7_75t_R add_4_cla_U67 ( .A(b[0]), .B(a[0]), .Y(add_4_cla_n47) );
+  NAND2x2_ASAP7_75t_R add_4_cla_U68 ( .A(b[1]), .B(a[1]), .Y(add_4_cla_n58) );
+  AO21x2_ASAP7_75t_R add_4_cla_U69 ( .A1(add_4_cla_n36), .A2(c_in), .B(g[0]), .Y(add_4_cla_n53) );
+  AO21x2_ASAP7_75t_R add_4_cla_U70 ( .A1(add_4_cla_n39), .A2(p[1]), .B(g[1]), .Y(add_4_cla_n52) );
+  OA21x2_ASAP7_75t_R add_4_cla_U71 ( .A1(b[2]), .A2(a[2]), .B(add_4_cla_n29), .Y(add_4_cla_n56) );
+  OA21x2_ASAP7_75t_R add_4_cla_U72 ( .A1(b[3]), .A2(a[3]), .B(add_4_cla_n44), .Y(add_4_cla_n55) );
+  HAxp5_ASAP7_75t_R add_4_cla_U73 ( .A(add_4_cla_n42), .B(p[3]), .SN(sum[3]) );
+  HAxp5_ASAP7_75t_R add_4_cla_U74 ( .A(add_4_cla_n31), .B(p[2]), .SN(sum[2]) );
+  HAxp5_ASAP7_75t_R add_4_cla_U75 ( .A(add_4_cla_n48), .B(p[1]), .SN(sum[1]) );
+  HAxp5_ASAP7_75t_R add_4_cla_U76 ( .A(add_4_cla_n43), .B(c_in), .SN(sum[0]) );
+  OAI21xp33_ASAP7_75t_R add_4_cla_U77 ( .A1(add_4_cla_n42), .A2(add_4_cla_n27), .B(add_4_cla_n45), .Y(c_out) );
+  OA21x2_ASAP7_75t_R add_4_cla_U78 ( .A1(add_4_cla_n31), .A2(add_4_cla_n28), .B(add_4_cla_n29), .Y(add_4_cla_n51) );
+  OA21x2_ASAP7_75t_R add_4_cla_U79 ( .A1(b[1]), .A2(a[1]), .B(add_4_cla_n58), .Y(add_4_cla_n61) );
+endmodule
+
+/////////////////////////////////////////////////////////////
+// Created by: Synopsys DC Expert(TM) in wire load mode
+// Version   : T-2022.03-SP2
+// Date      : Thu Mar 13 10:11:50 2025
+/////////////////////////////////////////////////////////////
+module adder_8_cla (
+  input [7:0] a,
+  input [7:0] b,
+  output [7:0] sum,
+  input c_in,
+  output c_out
+);
+  // 内部信号添加前缀
+  wire adder_8_cla_n5, adder_8_cla_n6, adder_8_cla_n7, adder_8_cla_n8, adder_8_cla_n9, 
+       adder_8_cla_n10, adder_8_cla_n11, adder_8_cla_n12, adder_8_cla_n13, 
+       adder_8_cla_n14, adder_8_cla_n15, adder_8_cla_n16, adder_8_cla_n17, 
+       adder_8_cla_n18, adder_8_cla_n19, adder_8_cla_n20, adder_8_cla_n21, 
+       adder_8_cla_n22, adder_8_cla_n23, adder_8_cla_n24, adder_8_cla_n25, 
+       adder_8_cla_n26, adder_8_cla_n27;
+  wire [3:0] adder_8_cla_g;
+  wire [3:0] adder_8_cla_p;
+
+  // 子模块实例化添加前缀
+  add_4_cla adder_8_cla_a4c1 ( 
+    .a(a[3:0]), 
+    .b(b[3:0]), 
+    .c_in(c_in), 
+    .sum(sum[3:0]), 
+    .g(adder_8_cla_g), 
+    .p(adder_8_cla_p)
+  );
+  
+  add_4_cla adder_8_cla_a4c2 ( 
+    .a(a[7:4]), 
+    .b(b[7:4]), 
+    .c_in(adder_8_cla_n11), 
+    .sum(sum[7:4]), 
+    .c_out(c_out)
+  );
+
+  // 门级单元添加前缀
+  BUFx2_ASAP7_75t_R adder_8_cla_U5 ( .A(adder_8_cla_n21), .Y(adder_8_cla_n5) );
+  BUFx4f_ASAP7_75t_R adder_8_cla_U6 ( .A(adder_8_cla_n10), .Y(adder_8_cla_n19) );
+  BUFx3_ASAP7_75t_R adder_8_cla_U7 ( .A(adder_8_cla_n13), .Y(adder_8_cla_n6) );
+  BUFx3_ASAP7_75t_R adder_8_cla_U8 ( .A(adder_8_cla_n22), .Y(adder_8_cla_n7) );
+  BUFx4f_ASAP7_75t_R adder_8_cla_U9 ( .A(adder_8_cla_n23), .Y(adder_8_cla_n8) );
+  BUFx6f_ASAP7_75t_R adder_8_cla_U10 ( .A(adder_8_cla_n18), .Y(adder_8_cla_n9) );
+  BUFx3_ASAP7_75t_R adder_8_cla_U11 ( .A(adder_8_cla_n7), .Y(adder_8_cla_n10) );
+  BUFx3_ASAP7_75t_R adder_8_cla_U12 ( .A(adder_8_cla_n6), .Y(adder_8_cla_n23) );
+  BUFx6f_ASAP7_75t_R adder_8_cla_U13 ( .A(adder_8_cla_n9), .Y(adder_8_cla_n24) );
+  BUFx4f_ASAP7_75t_R adder_8_cla_U14 ( .A(adder_8_cla_n8), .Y(adder_8_cla_n18) );
+  INVx3_ASAP7_75t_R adder_8_cla_U15 ( .A(adder_8_cla_n24), .Y(adder_8_cla_n11) );
+  HB1xp67_ASAP7_75t_R adder_8_cla_U16 ( .A(adder_8_cla_n27), .Y(adder_8_cla_n12) );
+  BUFx2_ASAP7_75t_R adder_8_cla_U17 ( .A(adder_8_cla_n5), .Y(adder_8_cla_n13) );
+  BUFx2_ASAP7_75t_R adder_8_cla_U18 ( .A(adder_8_cla_n16), .Y(adder_8_cla_n20) );
+  HB1xp67_ASAP7_75t_R adder_8_cla_U19 ( .A(adder_8_cla_n12), .Y(adder_8_cla_n14) );
+  BUFx2_ASAP7_75t_R adder_8_cla_U20 ( .A(adder_8_cla_n20), .Y(adder_8_cla_n22) );
+  HB1xp67_ASAP7_75t_R adder_8_cla_U21 ( .A(adder_8_cla_n25), .Y(adder_8_cla_n15) );
+  HB1xp67_ASAP7_75t_R adder_8_cla_U22 ( .A(adder_8_cla_n14), .Y(adder_8_cla_n16) );
+  HB1xp67_ASAP7_75t_R adder_8_cla_U23 ( .A(adder_8_cla_n15), .Y(adder_8_cla_n17) );
+  HB1xp67_ASAP7_75t_R adder_8_cla_U24 ( .A(adder_8_cla_n17), .Y(adder_8_cla_n21) );
+  INVx2_ASAP7_75t_R adder_8_cla_U25 ( .A(adder_8_cla_n19), .Y(adder_8_cla_n26) );
+  A2O1A1O1Ixp25_ASAP7_75t_R adder_8_cla_U26 ( 
+    .A1(adder_8_cla_p[2]), 
+    .A2(adder_8_cla_n26), 
+    .B(adder_8_cla_g[2]), 
+    .C(adder_8_cla_p[3]), 
+    .D(adder_8_cla_g[3]), 
+    .Y(adder_8_cla_n25) 
+  );
+  A2O1A1O1Ixp25_ASAP7_75t_R adder_8_cla_U27 ( 
+    .A1(adder_8_cla_p[0]), 
+    .A2(c_in), 
+    .B(adder_8_cla_g[0]), 
+    .C(adder_8_cla_p[1]), 
+    .D(adder_8_cla_g[1]), 
+    .Y(adder_8_cla_n27) 
+  );
+endmodule
+
+/////////////////////////////////////////////////////////////
+// Created by: Synopsys DC Expert(TM) in wire load mode
+// Version   : T-2022.03-SP2
+// Date      : Thu Mar 13 09:36:33 2025
+/////////////////////////////////////////////////////////////
+module blue_pe (
+  input a, b, sum_tmp,
+  output cout, sum
+);
+  // 内部信号添加前缀
+  wire blue_pe_ab, blue_pe_n1;
+
+  // 子模块实例化添加前缀
+  ha blue_pe_h2 ( 
+    .a(blue_pe_n1), 
+    .b(sum_tmp), 
+    .cout(cout), 
+    .sum(sum) 
+  );
+  
+  // 门级单元添加前缀
+  BUFx4f_ASAP7_75t_R blue_pe_U2 ( .A(blue_pe_ab), .Y(blue_pe_n1) );
+  AND2x4_ASAP7_75t_R blue_pe_U3 ( .A(b), .B(a), .Y(blue_pe_ab) );
+endmodule
+
+/////////////////////////////////////////////////////////////
+// Created by: Synopsys DC Expert(TM) in wire load mode
+// Version   : T-2022.03-SP2
+// Date      : Thu Mar 13 09:38:40 2025
+/////////////////////////////////////////////////////////////
+module fa1 ( 
+  input a, b, cin,
+  output sum, cout
+);
+  // 内部信号添加前缀
+  wire fa1_n3, fa1_n4, fa1_n5, fa1_n6, fa1_n7, fa1_n8, fa1_n9, fa1_n10, 
+       fa1_n11, fa1_n12, fa1_n13, fa1_n14;
+
+  // 门级单元添加前缀
+  INVx2_ASAP7_75t_R fa1_U5 ( .A(fa1_n10), .Y(fa1_n12) );
+  INVx3_ASAP7_75t_R fa1_U6 ( .A(fa1_n11), .Y(fa1_n10) );
+  BUFx2_ASAP7_75t_R fa1_U7 ( .A(fa1_n9), .Y(fa1_n3) );
+  BUFx3_ASAP7_75t_R fa1_U8 ( .A(fa1_n5), .Y(fa1_n4) );
+  BUFx2_ASAP7_75t_R fa1_U9 ( .A(fa1_n3), .Y(fa1_n5) );
+  BUFx4f_ASAP7_75t_R fa1_U10 ( .A(fa1_n6), .Y(fa1_n7) );
+  BUFx3_ASAP7_75t_R fa1_U11 ( .A(fa1_n4), .Y(fa1_n6) );
+  BUFx6f_ASAP7_75t_R fa1_U12 ( .A(fa1_n8), .Y(fa1_n13) );
+  BUFx4f_ASAP7_75t_R fa1_U13 ( .A(fa1_n7), .Y(fa1_n8) );
+  HB1xp67_ASAP7_75t_R fa1_U14 ( .A(fa1_n14), .Y(fa1_n9) );
+  BUFx6f_ASAP7_75t_R fa1_U15 ( .A(fa1_n13), .Y(fa1_n11) );
+  HAxp5_ASAP7_75t_R fa1_U16 ( .A(fa1_n12), .B(cin), .SN(sum) );
+  AO22x1_ASAP7_75t_R fa1_U17 ( 
+    .A1(b), 
+    .A2(a), 
+    .B1(fa1_n10), 
+    .B2(cin), 
+    .Y(cout) 
+  );
+  HAxp5_ASAP7_75t_R fa1_U18 ( .A(b), .B(a), .SN(fa1_n14) );
+endmodule
+
+/////////////////////////////////////////////////////////////
+// Created by: Synopsys DC Expert(TM) in wire load mode
+// Version   : T-2022.03-SP2
+// Date      : Thu Mar 13 09:38:00 2025
+/////////////////////////////////////////////////////////////
+module ha ( 
+  input a, b,
+  output cout, sum
+);
+  // 内部信号添加前缀
+  wire ha_n2;
+
+  // 门级单元添加前缀
+  INVx2_ASAP7_75t_R ha_U4 ( .A(a), .Y(ha_n2) );
+  HAxp5_ASAP7_75t_R ha_U5 ( .A(ha_n2), .B(b), .SN(sum) );
+  AND2x2_ASAP7_75t_R ha_U6 ( .A(b), .B(a), .Y(cout) );
+endmodule
+
+/////////////////////////////////////////////////////////////
+// Created by: Synopsys DC Expert(TM) in wire load mode
+// Version   : T-2022.03-SP2
+// Date      : Thu Mar 13 09:36:53 2025
+/////////////////////////////////////////////////////////////
+module red_pe ( 
+  input a, b, sum_tmp, cin,
+  output cout, sum
+);
+  // 内部信号添加前缀
+  wire red_pe_n1, red_pe_n2, red_pe_n3;
+
+  // 子模块实例化添加前缀
+  fa1 red_pe_f1 ( 
+    .a(red_pe_n3), 
+    .b(sum_tmp), 
+    .cin(cin), 
+    .sum(sum), 
+    .cout(cout) 
+  );
+  
+  // 门级单元添加前缀
+  AND2x4_ASAP7_75t_R red_pe_U2 ( .A(b), .B(a), .Y(red_pe_n1) );
+  INVx3_ASAP7_75t_R red_pe_U3 ( .A(red_pe_n1), .Y(red_pe_n2) );
+  BUFx6f_ASAP7_75t_R red_pe_U4 ( .A(red_pe_n2), .Y(red_pe_n3) );
+endmodule
+
+/////////////////////////////////////////////////////////////
+// Created by: Synopsys DC Expert(TM) in wire load mode
+// Version   : T-2022.03-SP2
+// Date      : Thu Mar 13 09:37:32 2025
+/////////////////////////////////////////////////////////////
+module yellow_pe ( 
+  input a, b, sum_tmp,
+  output cout, sum
+);
+  // 内部信号添加前缀
+  wire yellow_pe_n1, yellow_pe_n2, yellow_pe_n3;
+  
+  // 子模块实例化添加前缀
+  ha yellow_pe_h1 ( 
+    .a(yellow_pe_n3), 
+    .b(sum_tmp), 
+    .cout(cout), 
+    .sum(sum) 
+  );
+  
+  // 门级单元添加前缀
+  BUFx6f_ASAP7_75t_R yellow_pe_U2 ( .A(yellow_pe_n2), .Y(yellow_pe_n3) );
+  BUFx4f_ASAP7_75t_R yellow_pe_U3 ( .A(yellow_pe_n1), .Y(yellow_pe_n2) );
+  NAND2x2_ASAP7_75t_R yellow_pe_U4 ( .A(b), .B(a), .Y(yellow_pe_n1) );
+endmodule
+
+/////////////////////////////////////////////////////////////
+// Created by: Synopsys DC Expert(TM) in wire load mode
+// Version   : T-2022.03-SP2
+// Date      : Thu Mar 13 09:36:33 2025
+/////////////////////////////////////////////////////////////
+module black_pe ( 
+  input a, b, sum_tmp, cin,
+  output cout, sum
+);
+  // 内部信号添加前缀
+  wire black_pe_ab, black_pe_n1;
+
+  // 子模块实例化添加前缀
+  fa1 black_pe_f2 ( 
+    .a(black_pe_n1), 
+    .b(sum_tmp), 
+    .cin(cin), 
+    .sum(sum), 
+    .cout(cout) 
+  );
+  
+  // 门级单元添加前缀
+  BUFx4f_ASAP7_75t_R black_pe_U2 ( .A(black_pe_ab), .Y(black_pe_n1) );
+  AND2x4_ASAP7_75t_R black_pe_U3 ( .A(b), .B(a), .Y(black_pe_ab) );
+endmodule
+
+module mul_8x12 ( 
+  input clk,
+  input [7:0] a,
+  input [11:0] b,
+  output [19:0] out
+  
+);
+  wire   p0, p1, p2, p3, p4, n1, n4, n5, n6, n7, n8, n9, n10, n11, n12, n13,
+         n14, n15, n16, n17, n18;
+  wire   [6:0] m0;
+  wire   [7:1] m8;
+  wire   [7:1] m9;
+  wire   [7:1] m10;
+  wire   [7:1] m11;
+  wire   [7:0] cout1;
+  wire   [7:0] m1;
+  wire   [7:0] cout2;
+  wire   [7:0] m2;
+  wire   [7:0] cout3;
+  wire   [7:0] m3;
+  wire   [7:0] cout4;
+  wire   [7:0] m4;
+  wire   [7:0] a_r;
+  wire   [6:0] b5_r;
+  wire   [7:0] cout4_r;
+  wire   [7:1] m4_r;
+  wire   [7:0] cout5;
+  wire   [7:0] m5;
+  wire   [7:0] cout6;
+  wire   [7:0] m6;
+  wire   [7:0] cout7;
+  wire   [7:0] m7;
+  wire   [7:0] a_r2;
+  wire   [3:0] b8_r;
+  wire   [7:0] cout7_r;
+  wire   [7:1] m7_r;
+  wire   [7:0] cout8;
+  wire   [7:0] cout9;
+  wire   [7:0] cout10;
+  wire   [7:0] cout11;
+
+  yellow_pe y1 ( .a(a[7]), .b(b[1]), .sum_tmp(1'b0), .cout(cout1[7]), .sum(
+        m1[7]) );
+  black_pe br1 ( .a(a[6]), .b(b[1]), .sum_tmp(n1), .cin(1'b1), .cout(
+        cout1[6]), .sum(m1[6]) );
+  blue_pe b2 ( .a(a[5]), .b(b[1]), .sum_tmp(m0[6]), .cout(cout1[5]), .sum(
+        m1[5]) );
+  blue_pe b3 ( .a(a[4]), .b(b[1]), .sum_tmp(m0[5]), .cout(cout1[4]), .sum(
+        m1[4]) );
+  blue_pe b4 ( .a(a[3]), .b(b[1]), .sum_tmp(m0[4]), .cout(cout1[3]), .sum(
+        m1[3]) );
+  blue_pe bb5 ( .a(a[2]), .b(b[1]), .sum_tmp(m0[3]), .cout(cout1[2]), .sum(
+        m1[2]) );
+  blue_pe b6 ( .a(a[1]), .b(b[1]), .sum_tmp(m0[2]), .cout(cout1[1]), .sum(
+        m1[1]) );
+  blue_pe b7 ( .a(a[0]), .b(b[1]), .sum_tmp(m0[1]), .cout(cout1[0]), .sum(
+        m1[0]) );
+  yellow_pe y2 ( .a(a[7]), .b(b[2]), .sum_tmp(cout1[7]), .cout(cout2[7]), 
+        .sum(m2[7]) );
+  black_pe bl1 ( .a(a[6]), .b(b[2]), .sum_tmp(m1[7]), .cin(cout1[6]), 
+        .cout(cout2[6]), .sum(m2[6]) );
+  black_pe bl2 ( .a(a[5]), .b(b[2]), .sum_tmp(m1[6]), .cin(cout1[5]), 
+        .cout(cout2[5]), .sum(m2[5]) );
+  black_pe bl3 ( .a(a[4]), .b(b[2]), .sum_tmp(m1[5]), .cin(cout1[4]), 
+        .cout(cout2[4]), .sum(m2[4]) );
+  black_pe bl4 ( .a(a[3]), .b(b[2]), .sum_tmp(m1[4]), .cin(cout1[3]), 
+        .cout(cout2[3]), .sum(m2[3]) );
+  black_pe bl5 ( .a(a[2]), .b(b[2]), .sum_tmp(m1[3]), .cin(cout1[2]), 
+        .cout(cout2[2]), .sum(m2[2]) );
+  black_pe bl6 ( .a(a[1]), .b(b[2]), .sum_tmp(m1[2]), .cin(cout1[1]), 
+        .cout(cout2[1]), .sum(m2[1]) );
+  black_pe bl7 ( .a(a[0]), .b(b[2]), .sum_tmp(m1[1]), .cin(cout1[0]), 
+        .cout(cout2[0]), .sum(m2[0]) );
+  yellow_pe y3 ( .a(a[7]), .b(b[3]), .sum_tmp(cout2[7]), .cout(cout3[7]), 
+        .sum(m3[7]) );
+  black_pe bl8 ( .a(a[6]), .b(b[3]), .sum_tmp(m2[7]), .cin(cout2[6]), 
+        .cout(cout3[6]), .sum(m3[6]) );
+  black_pe bl9 ( .a(a[5]), .b(b[3]), .sum_tmp(m2[6]), .cin(cout2[5]), 
+        .cout(cout3[5]), .sum(m3[5]) );
+  black_pe bl10 ( .a(a[4]), .b(b[3]), .sum_tmp(m2[5]), .cin(cout2[4]), 
+        .cout(cout3[4]), .sum(m3[4]) );
+  black_pe bl11 ( .a(a[3]), .b(b[3]), .sum_tmp(m2[4]), .cin(cout2[3]), 
+        .cout(cout3[3]), .sum(m3[3]) );
+  black_pe bl12 ( .a(a[2]), .b(b[3]), .sum_tmp(m2[3]), .cin(cout2[2]), 
+        .cout(cout3[2]), .sum(m3[2]) );
+  black_pe bl13 ( .a(a[1]), .b(b[3]), .sum_tmp(m2[2]), .cin(cout2[1]), 
+        .cout(cout3[1]), .sum(m3[1]) );
+  black_pe bl14 ( .a(a[0]), .b(b[3]), .sum_tmp(m2[1]), .cin(cout2[0]), 
+        .cout(cout3[0]), .sum(m3[0]) );
+  red_pe y4 ( .a(a[7]), .b(b[4]), .sum_tmp(cout3[7]), .cin(1'b1), .cout(
+        cout4[7]), .sum(m4[7]) );
+  black_pe bl15 ( .a(a[6]), .b(b[4]), .sum_tmp(m3[7]), .cin(cout3[6]), 
+        .cout(cout4[6]), .sum(m4[6]) );
+  black_pe bl16 ( .a(a[5]), .b(b[4]), .sum_tmp(m3[6]), .cin(cout3[5]), 
+        .cout(cout4[5]), .sum(m4[5]) );
+  black_pe bl17 ( .a(a[4]), .b(b[4]), .sum_tmp(m3[5]), .cin(cout3[4]), 
+        .cout(cout4[4]), .sum(m4[4]) );
+  black_pe bl18 ( .a(a[3]), .b(b[4]), .sum_tmp(m3[4]), .cin(cout3[3]), 
+        .cout(cout4[3]), .sum(m4[3]) );
+  black_pe bl19 ( .a(a[2]), .b(b[4]), .sum_tmp(m3[3]), .cin(cout3[2]), 
+        .cout(cout4[2]), .sum(m4[2]) );
+  black_pe bl20 ( .a(a[1]), .b(b[4]), .sum_tmp(m3[2]), .cin(cout3[1]), 
+        .cout(cout4[1]), .sum(m4[1]) );
+  black_pe bl21 ( .a(a[0]), .b(b[4]), .sum_tmp(m3[1]), .cin(cout3[0]), 
+        .cout(cout4[0]), .sum(m4[0]) );
+  yellow_pe y5 ( .a(a_r[7]), .b(b5_r[0]), .sum_tmp(cout4_r[7]), .cout(
+        cout5[7]), .sum(m5[7]) );
+  black_pe bl22 ( .a(a_r[6]), .b(b5_r[0]), .sum_tmp(m4_r[7]), .cin(
+        cout4_r[6]), .cout(cout5[6]), .sum(m5[6]) );
+  black_pe bl23 ( .a(a_r[5]), .b(b5_r[0]), .sum_tmp(m4_r[6]), .cin(
+        cout4_r[5]), .cout(cout5[5]), .sum(m5[5]) );
+  black_pe bl24 ( .a(a_r[4]), .b(b5_r[0]), .sum_tmp(m4_r[5]), .cin(
+        cout4_r[4]), .cout(cout5[4]), .sum(m5[4]) );
+  black_pe bl25 ( .a(a_r[3]), .b(b5_r[0]), .sum_tmp(m4_r[4]), .cin(
+        cout4_r[3]), .cout(cout5[3]), .sum(m5[3]) );
+  black_pe bl26 ( .a(a_r[2]), .b(b5_r[0]), .sum_tmp(m4_r[3]), .cin(
+        cout4_r[2]), .cout(cout5[2]), .sum(m5[2]) );
+  black_pe bl27 ( .a(a_r[1]), .b(n14), .sum_tmp(m4_r[2]), .cin(cout4_r[1]), 
+        .cout(cout5[1]), .sum(m5[1]) );
+  black_pe bl28 ( .a(a_r[0]), .b(n14), .sum_tmp(m4_r[1]), .cin(cout4_r[0]), 
+        .cout(cout5[0]), .sum(m5[0]) );
+  yellow_pe y6 ( .a(a_r[7]), .b(b5_r[1]), .sum_tmp(cout5[7]), .cout(cout6[7]), .sum(m6[7]) );
+  black_pe bl29 ( .a(a_r[6]), .b(b5_r[1]), .sum_tmp(m5[7]), .cin(cout5[6]), 
+        .cout(cout6[6]), .sum(m6[6]) );
+  black_pe bl30 ( .a(a_r[5]), .b(b5_r[1]), .sum_tmp(m5[6]), .cin(cout5[5]), 
+        .cout(cout6[5]), .sum(m6[5]) );
+  black_pe bl31 ( .a(a_r[4]), .b(b5_r[1]), .sum_tmp(m5[5]), .cin(cout5[4]), 
+        .cout(cout6[4]), .sum(m6[4]) );
+  black_pe bl32 ( .a(a_r[3]), .b(b5_r[1]), .sum_tmp(m5[4]), .cin(cout5[3]), 
+        .cout(cout6[3]), .sum(m6[3]) );
+  black_pe bl33 ( .a(a_r[2]), .b(b5_r[1]), .sum_tmp(m5[3]), .cin(cout5[2]), 
+        .cout(cout6[2]), .sum(m6[2]) );
+  black_pe bl34 ( .a(a_r[1]), .b(b5_r[1]), .sum_tmp(m5[2]), .cin(cout5[1]), 
+        .cout(cout6[1]), .sum(m6[1]) );
+  black_pe bl35 ( .a(a_r[0]), .b(b5_r[1]), .sum_tmp(m5[1]), .cin(cout5[0]), 
+        .cout(cout6[0]), .sum(m6[0]) );
+  yellow_pe y6b7 ( .a(a_r[7]), .b(b5_r[2]), .sum_tmp(cout6[7]), .cout(
+        cout7[7]), .sum(m7[7]) );
+  black_pe bl29b7 ( .a(a_r[6]), .b(b5_r[2]), .sum_tmp(m6[7]), .cin(cout6[6]), .cout(cout7[6]), .sum(m7[6]) );
+  black_pe bl30b7 ( .a(a_r[5]), .b(b5_r[2]), .sum_tmp(m6[6]), .cin(cout6[5]), .cout(cout7[5]), .sum(m7[5]) );
+  black_pe bl31b7 ( .a(a_r[4]), .b(b5_r[2]), .sum_tmp(m6[5]), .cin(cout6[4]), .cout(cout7[4]), .sum(m7[4]) );
+  black_pe bl32b7 ( .a(a_r[3]), .b(b5_r[2]), .sum_tmp(m6[4]), .cin(cout6[3]), .cout(cout7[3]), .sum(m7[3]) );
+  black_pe bl33b7 ( .a(a_r[2]), .b(b5_r[2]), .sum_tmp(m6[3]), .cin(cout6[2]), .cout(cout7[2]), .sum(m7[2]) );
+  black_pe bl34b7 ( .a(a_r[1]), .b(b5_r[2]), .sum_tmp(m6[2]), .cin(cout6[1]), .cout(cout7[1]), .sum(m7[1]) );
+  black_pe bl35b7 ( .a(a_r[0]), .b(b5_r[2]), .sum_tmp(m6[1]), .cin(cout6[0]), .cout(cout7[0]), .sum(m7[0]) );
+  yellow_pe y6b8 ( .a(a_r2[7]), .b(n18), .sum_tmp(cout7_r[7]), .cout(
+        cout8[7]), .sum(m8[7]) );
+  black_pe bl29b8 ( .a(a_r2[6]), .b(n18), .sum_tmp(m7_r[7]), .cin(
+        cout7_r[6]), .cout(cout8[6]), .sum(m8[6]) );
+  black_pe bl30b8 ( .a(a_r2[5]), .b(n18), .sum_tmp(m7_r[6]), .cin(
+        cout7_r[5]), .cout(cout8[5]), .sum(m8[5]) );
+  black_pe bl31b8 ( .a(a_r2[4]), .b(n18), .sum_tmp(m7_r[5]), .cin(
+        cout7_r[4]), .cout(cout8[4]), .sum(m8[4]) );
+  black_pe bl32b8 ( .a(a_r2[3]), .b(b8_r[0]), .sum_tmp(m7_r[4]), .cin(
+        cout7_r[3]), .cout(cout8[3]), .sum(m8[3]) );
+  black_pe bl33b8 ( .a(a_r2[2]), .b(b8_r[0]), .sum_tmp(m7_r[3]), .cin(
+        cout7_r[2]), .cout(cout8[2]), .sum(m8[2]) );
+  black_pe bl34b8 ( .a(a_r2[1]), .b(n13), .sum_tmp(m7_r[2]), .cin(
+        cout7_r[1]), .cout(cout8[1]), .sum(m8[1]) );
+  black_pe bl35b8 ( .a(a_r2[0]), .b(b8_r[0]), .sum_tmp(m7_r[1]), .cin(
+        cout7_r[0]), .cout(cout8[0]), .sum(out[8]) );
+  yellow_pe y6b9 ( .a(a_r2[7]), .b(b8_r[1]), .sum_tmp(cout8[7]), .cout(
+        cout9[7]), .sum(m9[7]) );
+  black_pe bl29b9 ( .a(a_r2[6]), .b(b8_r[1]), .sum_tmp(m8[7]), .cin(
+        cout8[6]), .cout(cout9[6]), .sum(m9[6]) );
+  black_pe bl30b9 ( .a(a_r2[5]), .b(b8_r[1]), .sum_tmp(m8[6]), .cin(
+        cout8[5]), .cout(cout9[5]), .sum(m9[5]) );
+  black_pe bl31b9 ( .a(a_r2[4]), .b(b8_r[1]), .sum_tmp(m8[5]), .cin(
+        cout8[4]), .cout(cout9[4]), .sum(m9[4]) );
+  black_pe bl32b9 ( .a(n15), .b(b8_r[1]), .sum_tmp(m8[4]), .cin(cout8[3]), 
+        .cout(cout9[3]), .sum(m9[3]) );
+  black_pe bl33b9 ( .a(n10), .b(b8_r[1]), .sum_tmp(m8[3]), .cin(cout8[2]), 
+        .cout(cout9[2]), .sum(m9[2]) );
+  black_pe bl34b9 ( .a(a_r2[1]), .b(b8_r[1]), .sum_tmp(m8[2]), .cin(cout8[1]), .cout(cout9[1]), .sum(m9[1]) );
+  black_pe bl35b9 ( .a(a_r2[0]), .b(b8_r[1]), .sum_tmp(m8[1]), .cin(cout8[0]), .cout(cout9[0]), .sum(out[9]) );
+  yellow_pe y6b10 ( .a(a_r2[7]), .b(b8_r[2]), .sum_tmp(cout9[7]), .cout(
+        cout10[7]), .sum(m10[7]) );
+  black_pe bl29b10 ( .a(a_r2[6]), .b(b8_r[2]), .sum_tmp(m9[7]), .cin(
+        cout9[6]), .cout(cout10[6]), .sum(m10[6]) );
+  black_pe bl30b10 ( .a(a_r2[5]), .b(b8_r[2]), .sum_tmp(m9[6]), .cin(
+        cout9[5]), .cout(cout10[5]), .sum(m10[5]) );
+  black_pe bl31b10 ( .a(a_r2[4]), .b(b8_r[2]), .sum_tmp(m9[5]), .cin(
+        cout9[4]), .cout(cout10[4]), .sum(m10[4]) );
+  black_pe bl32b10 ( .a(n15), .b(b8_r[2]), .sum_tmp(m9[4]), .cin(cout9[3]), 
+        .cout(cout10[3]), .sum(m10[3]) );
+  black_pe bl33b10 ( .a(n11), .b(b8_r[2]), .sum_tmp(m9[3]), .cin(cout9[2]), 
+        .cout(cout10[2]), .sum(m10[2]) );
+  black_pe bl34b10 ( .a(a_r2[1]), .b(b8_r[2]), .sum_tmp(m9[2]), .cin(
+        cout9[1]), .cout(cout10[1]), .sum(m10[1]) );
+  black_pe bl35b10 ( .a(a_r2[0]), .b(b8_r[2]), .sum_tmp(m9[1]), .cin(
+        cout9[0]), .cout(cout10[0]), .sum(out[10]) );
+  blue_pe b8b11 ( .a(a_r2[7]), .b(b8_r[3]), .sum_tmp(cout10[7]), .cout(
+        cout11[7]), .sum(m11[7]) );
+  red_pe r1b11 ( .a(a_r2[6]), .b(b8_r[3]), .sum_tmp(m10[7]), .cin(cout10[6]), 
+        .cout(cout11[6]), .sum(m11[6]) );
+  red_pe r2b11 ( .a(a_r2[5]), .b(b8_r[3]), .sum_tmp(m10[6]), .cin(cout10[5]), 
+        .cout(cout11[5]), .sum(m11[5]) );
+  red_pe r3b11 ( .a(a_r2[4]), .b(b8_r[3]), .sum_tmp(m10[5]), .cin(cout10[4]), 
+        .cout(cout11[4]), .sum(m11[4]) );
+  red_pe r4b11 ( .a(n15), .b(b8_r[3]), .sum_tmp(m10[4]), .cin(cout10[3]), 
+        .cout(cout11[3]), .sum(m11[3]) );
+  red_pe r5b11 ( .a(n11), .b(b8_r[3]), .sum_tmp(m10[3]), .cin(cout10[2]), 
+        .cout(cout11[2]), .sum(m11[2]) );
+  red_pe r6b11 ( .a(a_r2[1]), .b(b8_r[3]), .sum_tmp(m10[2]), .cin(cout10[1]), 
+        .cout(cout11[1]), .sum(m11[1]) );
+  red_pe r7b11 ( .a(a_r2[0]), .b(b8_r[3]), .sum_tmp(m10[1]), .cin(cout10[0]), 
+        .cout(cout11[0]), .sum(out[11]) );
+  adder_8_cla ad1 ( .a(cout11), .b({1'b1, m11}), .cin(1'b0), .sum(out[19:12])
+         );
+  DFFHQx4_ASAP7_75t_R a_r_reg_7_ ( .D(a[7]), .CLK(clk), .Q(a_r[7]) );
+  DFFHQx4_ASAP7_75t_R a_r_reg_5_ ( .D(a[5]), .CLK(clk), .Q(a_r[5]) );
+  DFFHQx4_ASAP7_75t_R a_r_reg_4_ ( .D(a[4]), .CLK(clk), .Q(a_r[4]) );
+  DFFHQx4_ASAP7_75t_R a_r_reg_3_ ( .D(a[3]), .CLK(clk), .Q(a_r[3]) );
+  DFFHQx4_ASAP7_75t_R a_r_reg_2_ ( .D(a[2]), .CLK(clk), .Q(a_r[2]) );
+  DFFHQx4_ASAP7_75t_R a_r_reg_1_ ( .D(a[1]), .CLK(clk), .Q(a_r[1]) );
+  DFFHQx4_ASAP7_75t_R a_r_reg_0_ ( .D(a[0]), .CLK(clk), .Q(a_r[0]) );
+  DFFHQx4_ASAP7_75t_R b5_r_reg_6_ ( .D(b[11]), .CLK(clk), .Q(b5_r[6]) );
+  DFFHQx4_ASAP7_75t_R b5_r_reg_5_ ( .D(b[10]), .CLK(clk), .Q(b5_r[5]) );
+  DFFHQx4_ASAP7_75t_R b5_r_reg_4_ ( .D(b[9]), .CLK(clk), .Q(b5_r[4]) );
+  DFFHQx4_ASAP7_75t_R b5_r_reg_3_ ( .D(b[8]), .CLK(clk), .Q(b5_r[3]) );
+  DFFHQx4_ASAP7_75t_R b5_r_reg_2_ ( .D(b[7]), .CLK(clk), .Q(b5_r[2]) );
+  DFFHQx4_ASAP7_75t_R b5_r_reg_1_ ( .D(b[6]), .CLK(clk), .Q(b5_r[1]) );
+  DFFHQx4_ASAP7_75t_R cout4_r_reg_7_ ( .D(cout4[7]), .CLK(clk), .Q(cout4_r[7])
+         );
+  DFFHQx4_ASAP7_75t_R cout4_r_reg_6_ ( .D(cout4[6]), .CLK(clk), .Q(cout4_r[6])
+         );
+  DFFHQx4_ASAP7_75t_R cout4_r_reg_5_ ( .D(cout4[5]), .CLK(clk), .Q(cout4_r[5])
+         );
+  DFFHQx4_ASAP7_75t_R cout4_r_reg_3_ ( .D(cout4[3]), .CLK(clk), .Q(cout4_r[3])
+         );
+  DFFHQx4_ASAP7_75t_R m4_r_reg_7_ ( .D(m4[7]), .CLK(clk), .Q(m4_r[7]) );
+  DFFHQx4_ASAP7_75t_R m4_r_reg_6_ ( .D(m4[6]), .CLK(clk), .Q(m4_r[6]) );
+  DFFHQx4_ASAP7_75t_R m4_r_reg_5_ ( .D(m4[5]), .CLK(clk), .Q(m4_r[5]) );
+  DFFHQx4_ASAP7_75t_R p0_reg ( .D(m0[0]), .CLK(clk), .Q(p0) );
+  DFFHQx4_ASAP7_75t_R p1_reg ( .D(m1[0]), .CLK(clk), .Q(p1) );
+  DFFHQx4_ASAP7_75t_R p2_reg ( .D(m2[0]), .CLK(clk), .Q(p2) );
+  DFFHQx4_ASAP7_75t_R p3_reg ( .D(m3[0]), .CLK(clk), .Q(p3) );
+  DFFHQx4_ASAP7_75t_R a_r2_reg_7_ ( .D(a_r[7]), .CLK(clk), .Q(a_r2[7]) );
+  DFFHQx4_ASAP7_75t_R a_r2_reg_6_ ( .D(a_r[6]), .CLK(clk), .Q(a_r2[6]) );
+  DFFHQx4_ASAP7_75t_R a_r2_reg_5_ ( .D(a_r[5]), .CLK(clk), .Q(a_r2[5]) );
+  DFFHQx4_ASAP7_75t_R a_r2_reg_4_ ( .D(a_r[4]), .CLK(clk), .Q(a_r2[4]) );
+  DFFHQx4_ASAP7_75t_R a_r2_reg_2_ ( .D(a_r[2]), .CLK(clk), .Q(a_r2[2]) );
+  DFFHQx4_ASAP7_75t_R a_r2_reg_1_ ( .D(a_r[1]), .CLK(clk), .Q(a_r2[1]) );
+  DFFHQx4_ASAP7_75t_R a_r2_reg_0_ ( .D(a_r[0]), .CLK(clk), .Q(a_r2[0]) );
+  DFFHQx4_ASAP7_75t_R b8_r_reg_3_ ( .D(b5_r[6]), .CLK(clk), .Q(b8_r[3]) );
+  DFFHQx4_ASAP7_75t_R b8_r_reg_2_ ( .D(b5_r[5]), .CLK(clk), .Q(b8_r[2]) );
+  DFFHQx4_ASAP7_75t_R b8_r_reg_1_ ( .D(b5_r[4]), .CLK(clk), .Q(b8_r[1]) );
+  DFFHQx4_ASAP7_75t_R cout7_r_reg_7_ ( .D(cout7[7]), .CLK(clk), .Q(cout7_r[7])
+         );
+  DFFHQx4_ASAP7_75t_R cout7_r_reg_6_ ( .D(cout7[6]), .CLK(clk), .Q(cout7_r[6])
+         );
+  DFFHQx4_ASAP7_75t_R cout7_r_reg_5_ ( .D(cout7[5]), .CLK(clk), .Q(cout7_r[5])
+         );
+  DFFHQx4_ASAP7_75t_R cout7_r_reg_4_ ( .D(cout7[4]), .CLK(clk), .Q(cout7_r[4])
+         );
+  DFFHQx4_ASAP7_75t_R cout7_r_reg_3_ ( .D(cout7[3]), .CLK(clk), .Q(cout7_r[3])
+         );
+  DFFHQx4_ASAP7_75t_R cout7_r_reg_1_ ( .D(cout7[1]), .CLK(clk), .Q(cout7_r[1])
+         );
+  DFFHQx4_ASAP7_75t_R cout7_r_reg_0_ ( .D(cout7[0]), .CLK(clk), .Q(cout7_r[0])
+         );
+  DFFHQx4_ASAP7_75t_R m7_r_reg_7_ ( .D(m7[7]), .CLK(clk), .Q(m7_r[7]) );
+  DFFHQx4_ASAP7_75t_R m7_r_reg_6_ ( .D(m7[6]), .CLK(clk), .Q(m7_r[6]) );
+  DFFHQx4_ASAP7_75t_R m7_r_reg_5_ ( .D(m7[5]), .CLK(clk), .Q(m7_r[5]) );
+  DFFHQx4_ASAP7_75t_R m7_r_reg_2_ ( .D(m7[2]), .CLK(clk), .Q(m7_r[2]) );
+  DFFHQx4_ASAP7_75t_R m7_r_reg_1_ ( .D(m7[1]), .CLK(clk), .Q(m7_r[1]) );
+  DFFHQx4_ASAP7_75t_R p0_2_reg ( .D(p0), .CLK(clk), .Q(out[0]) );
+  DFFHQx4_ASAP7_75t_R p1_2_reg ( .D(p1), .CLK(clk), .Q(out[1]) );
+  DFFHQx4_ASAP7_75t_R p2_2_reg ( .D(p2), .CLK(clk), .Q(out[2]) );
+  DFFHQx4_ASAP7_75t_R p3_2_reg ( .D(p3), .CLK(clk), .Q(out[3]) );
+  DFFHQx4_ASAP7_75t_R p4_2_reg ( .D(p4), .CLK(clk), .Q(out[4]) );
+  DFFHQx4_ASAP7_75t_R p5_2_reg ( .D(m5[0]), .CLK(clk), .Q(out[5]) );
+  DFFHQx4_ASAP7_75t_R p6_2_reg ( .D(m6[0]), .CLK(clk), .Q(out[6]) );
+  DFFHQx4_ASAP7_75t_R p7_2_reg ( .D(m7[0]), .CLK(clk), .Q(out[7]) );
+  AND2x2_ASAP7_75t_R U10 ( .A(a[0]), .B(b[0]), .Y(m0[0]) );
+  DFFHQx4_ASAP7_75t_R p4_reg ( .D(m4[0]), .CLK(clk), .Q(p4) );
+  DFFHQx4_ASAP7_75t_R cout4_r_reg_0_ ( .D(cout4[0]), .CLK(clk), .Q(cout4_r[0])
+         );
+  DFFHQx4_ASAP7_75t_R m4_r_reg_3_ ( .D(m4[3]), .CLK(clk), .Q(m4_r[3]) );
+  DFFHQx4_ASAP7_75t_R m4_r_reg_2_ ( .D(m4[2]), .CLK(clk), .Q(m4_r[2]) );
+  DFFHQx4_ASAP7_75t_R m4_r_reg_1_ ( .D(m4[1]), .CLK(clk), .Q(m4_r[1]) );
+  DFFHQx4_ASAP7_75t_R m4_r_reg_4_ ( .D(m4[4]), .CLK(clk), .Q(m4_r[4]) );
+  DFFHQx4_ASAP7_75t_R cout4_r_reg_1_ ( .D(cout4[1]), .CLK(clk), .Q(cout4_r[1])
+         );
+  DFFHQx4_ASAP7_75t_R cout4_r_reg_2_ ( .D(cout4[2]), .CLK(clk), .Q(cout4_r[2])
+         );
+  DFFHQx4_ASAP7_75t_R cout4_r_reg_4_ ( .D(cout4[4]), .CLK(clk), .Q(cout4_r[4])
+         );
+  DFFHQx4_ASAP7_75t_R m7_r_reg_4_ ( .D(m7[4]), .CLK(clk), .Q(m7_r[4]) );
+  DFFHQx4_ASAP7_75t_R a_r_reg_6_ ( .D(a[6]), .CLK(clk), .Q(a_r[6]) );
+  DFFHQx4_ASAP7_75t_R m7_r_reg_3_ ( .D(m7[3]), .CLK(clk), .Q(m7_r[3]) );
+  DFFHQx4_ASAP7_75t_R b5_r_reg_0_ ( .D(b[5]), .CLK(clk), .Q(b5_r[0]) );
+  DFFHQNx1_ASAP7_75t_R b8_r_reg_0_ ( .D(n16), .CLK(clk), .QN(b8_r[0]) );
+  DFFHQNx1_ASAP7_75t_R cout7_r_reg_2_ ( .D(n12), .CLK(clk), .QN(cout7_r[2]) );
+  SDFHx4_ASAP7_75t_R a_r2_reg_3_ ( .D(1'b1), .SI(1'b0), .SE(a_r[3]), .CLK(clk), 
+        .QN(a_r2[3]) );
+  NOR2x2_ASAP7_75t_R U13 ( .A(n4), .B(n5), .Y(m0[6]) );
+  CKINVDCx20_ASAP7_75t_R U14 ( .A(a[6]), .Y(n4) );
+  CKINVDCx20_ASAP7_75t_R U15 ( .A(b[0]), .Y(n5) );
+  NOR2x2_ASAP7_75t_R U16 ( .A(n6), .B(n7), .Y(m0[5]) );
+  CKINVDCx20_ASAP7_75t_R U17 ( .A(a[5]), .Y(n6) );
+  CKINVDCx20_ASAP7_75t_R U18 ( .A(b[0]), .Y(n7) );
+  NOR2x2_ASAP7_75t_R U19 ( .A(n8), .B(n9), .Y(m0[4]) );
+  CKINVDCx20_ASAP7_75t_R U20 ( .A(a[4]), .Y(n8) );
+  CKINVDCx20_ASAP7_75t_R U21 ( .A(b[0]), .Y(n9) );
+  HB1xp67_ASAP7_75t_R U22 ( .A(a_r2[2]), .Y(n10) );
+  NAND2x2_ASAP7_75t_R U23 ( .A(a[7]), .B(b[0]), .Y(n1) );
+  HB1xp67_ASAP7_75t_R U24 ( .A(n10), .Y(n11) );
+  INVx1_ASAP7_75t_R U25 ( .A(cout7[2]), .Y(n12) );
+  HB1xp67_ASAP7_75t_R U26 ( .A(b8_r[0]), .Y(n13) );
+  HB1xp67_ASAP7_75t_R U27 ( .A(b5_r[0]), .Y(n14) );
+  HB1xp67_ASAP7_75t_R U28 ( .A(a_r2[3]), .Y(n15) );
+  AND2x4_ASAP7_75t_R U29 ( .A(a[1]), .B(b[0]), .Y(m0[1]) );
+  INVx1_ASAP7_75t_R U30 ( .A(b5_r[3]), .Y(n16) );
+  INVxp33_ASAP7_75t_R U31 ( .A(n13), .Y(n17) );
+  INVx1_ASAP7_75t_R U32 ( .A(n17), .Y(n18) );
+  AND2x2_ASAP7_75t_R U33 ( .A(a[2]), .B(b[0]), .Y(m0[2]) );
+  AND2x2_ASAP7_75t_R U34 ( .A(a[3]), .B(b[0]), .Y(m0[3]) );
+endmodule
+

@@ -1,0 +1,125 @@
+# Warning: SAIF file '/home/syq/spcal/src/spcal/tools/../../../data/saif/instin.saif' not found. Init as 0.5.
+libs:
+- asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120
+- asap7sc7p5t_AO_RVT_TT_nldm_211120
+- asap7sc7p5t_INVBUF_RVT_TT_nldm_220122
+- asap7sc7p5t_OA_RVT_TT_nldm_211120
+- asap7sc7p5t_SEQ_RVT_TT_nldm_220123
+- manual
+port_prefixes:
+  input:
+  - .A
+  - .B
+  - .C
+  - .D
+  - .E
+  - .CI
+  - .H
+  output:
+  - .Y
+  - .QN
+  - .L
+  - .SN
+  - .CON
+external_sp_inputs_spec:
+  Addr[0]: 0.5
+  Addr[1]: 0.5
+  Addr[2]: 0.5
+  Addr[3]: 0.5
+  Addr[4]: 0.5
+  Addr[5]: 0.5
+  Addr[6]: 0.5
+  Addr[7]: 0.5
+  Addr[8]: 0.5
+  Addr[9]: 0.5
+  Addr[10]: 0.5
+  Addr[11]: 0.5
+  Addr[12]: 0.5
+  Addr[13]: 0.5
+  Addr[14]: 0.5
+  Addr[15]: 0.5
+  Addr[16]: 0.5
+  Addr[17]: 0.5
+  Addr[18]: 0.5
+  Addr[19]: 0.5
+  Addr[20]: 0.5
+  Addr[21]: 0.5
+  Addr[22]: 0.5
+  Addr[23]: 0.5
+  Addr[24]: 0.5
+  Addr[25]: 0.5
+  Addr[26]: 0.5
+  Addr[27]: 0.5
+  Addr[28]: 0.5
+  Addr[29]: 0.5
+  Addr[30]: 0.5
+  Addr[31]: 0.5
+  addInst[0]: 0.5
+  addInst[1]: 0.5
+  addInst[2]: 0.5
+  addInst[3]: 0.5
+  addInst[4]: 0.5
+  addInst[5]: 0.5
+  addInst[6]: 0.5
+  addInst[7]: 0.5
+  addInst[8]: 0.5
+  addInst[9]: 0.5
+  addInst[10]: 0.5
+  addInst[11]: 0.5
+  addInst[12]: 0.5
+  addInst[13]: 0.5
+  addInst[14]: 0.5
+  addInst[15]: 0.5
+  addInst[16]: 0.5
+  addInst[17]: 0.5
+  addInst[18]: 0.5
+  addInst[19]: 0.5
+  addInst[20]: 0.5
+  addInst[21]: 0.5
+  addInst[22]: 0.5
+  addInst[23]: 0.5
+  addInst[24]: 0.5
+  addInst[25]: 0.5
+  addInst[26]: 0.5
+  addInst[27]: 0.5
+  addInst[28]: 0.5
+  addInst[29]: 0.5
+  addInst[30]: 0.5
+  addInst[31]: 0.5
+  addAddr[0]: 0.5
+  addAddr[1]: 0.5
+  addAddr[2]: 0.5
+  addAddr[3]: 0.5
+  addAddr[4]: 0.5
+  addAddr[5]: 0.5
+  addAddr[6]: 0.5
+  addAddr[7]: 0.5
+  addAddr[8]: 0.5
+  addAddr[9]: 0.5
+  addAddr[10]: 0.5
+  addAddr[11]: 0.5
+  addAddr[12]: 0.5
+  addAddr[13]: 0.5
+  addAddr[14]: 0.5
+  addAddr[15]: 0.5
+  addAddr[16]: 0.5
+  addAddr[17]: 0.5
+  addAddr[18]: 0.5
+  addAddr[19]: 0.5
+  addAddr[20]: 0.5
+  addAddr[21]: 0.5
+  addAddr[22]: 0.5
+  addAddr[23]: 0.5
+  addAddr[24]: 0.5
+  addAddr[25]: 0.5
+  addAddr[26]: 0.5
+  addAddr[27]: 0.5
+  addAddr[28]: 0.5
+  addAddr[29]: 0.5
+  addAddr[30]: 0.5
+  addAddr[31]: 0.5
+  clk: 0.5
+  rst: 0.5
+  rdy: 0.5
+  fetchEn: 0.5
+  addEn: 0.5

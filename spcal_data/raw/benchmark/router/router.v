@@ -1,0 +1,184 @@
+/////////////////////////////////////////////////////////////
+// Created by: Synopsys DC Expert(TM) in wire load mode
+// Version   : O-2018.06-SP1
+// Date      : Sat Feb  8 01:29:22 2025
+/////////////////////////////////////////////////////////////
+
+
+module router ( dest_x_0_, dest_x_1_, dest_x_2_, dest_x_3_, dest_x_4_, 
+        dest_x_5_, dest_x_6_, dest_x_7_, dest_x_8_, dest_x_9_, dest_x_10_, 
+        dest_x_11_, dest_x_12_, dest_x_13_, dest_x_14_, dest_x_15_, dest_x_16_, 
+        dest_x_17_, dest_x_18_, dest_x_19_, dest_x_20_, dest_x_21_, dest_x_22_, 
+        dest_x_23_, dest_x_24_, dest_x_25_, dest_x_26_, dest_x_27_, dest_x_28_, 
+        dest_x_29_, dest_y_0_, dest_y_1_, dest_y_2_, dest_y_3_, dest_y_4_, 
+        dest_y_5_, dest_y_6_, dest_y_7_, dest_y_8_, dest_y_9_, dest_y_10_, 
+        dest_y_11_, dest_y_12_, dest_y_13_, dest_y_14_, dest_y_15_, dest_y_16_, 
+        dest_y_17_, dest_y_18_, dest_y_19_, dest_y_20_, dest_y_21_, dest_y_22_, 
+        dest_y_23_, dest_y_24_, dest_y_25_, dest_y_26_, dest_y_27_, dest_y_28_, 
+        dest_y_29_, outport_0_, outport_1_, outport_2_, outport_3_, outport_4_, 
+        outport_5_, outport_6_, outport_7_, outport_8_, outport_9_, 
+        outport_10_, outport_11_, outport_12_, outport_13_, outport_14_, 
+        outport_15_, outport_16_, outport_17_, outport_18_, outport_19_, 
+        outport_20_, outport_21_, outport_22_, outport_23_, outport_24_, 
+        outport_25_, outport_26_, outport_27_, outport_28_, outport_29_ );
+  input dest_x_0_, dest_x_1_, dest_x_2_, dest_x_3_, dest_x_4_, dest_x_5_,
+         dest_x_6_, dest_x_7_, dest_x_8_, dest_x_9_, dest_x_10_, dest_x_11_,
+         dest_x_12_, dest_x_13_, dest_x_14_, dest_x_15_, dest_x_16_,
+         dest_x_17_, dest_x_18_, dest_x_19_, dest_x_20_, dest_x_21_,
+         dest_x_22_, dest_x_23_, dest_x_24_, dest_x_25_, dest_x_26_,
+         dest_x_27_, dest_x_28_, dest_x_29_, dest_y_0_, dest_y_1_, dest_y_2_,
+         dest_y_3_, dest_y_4_, dest_y_5_, dest_y_6_, dest_y_7_, dest_y_8_,
+         dest_y_9_, dest_y_10_, dest_y_11_, dest_y_12_, dest_y_13_, dest_y_14_,
+         dest_y_15_, dest_y_16_, dest_y_17_, dest_y_18_, dest_y_19_,
+         dest_y_20_, dest_y_21_, dest_y_22_, dest_y_23_, dest_y_24_,
+         dest_y_25_, dest_y_26_, dest_y_27_, dest_y_28_, dest_y_29_;
+  output outport_0_, outport_1_, outport_2_, outport_3_, outport_4_,
+         outport_5_, outport_6_, outport_7_, outport_8_, outport_9_,
+         outport_10_, outport_11_, outport_12_, outport_13_, outport_14_,
+         outport_15_, outport_16_, outport_17_, outport_18_, outport_19_,
+         outport_20_, outport_21_, outport_22_, outport_23_, outport_24_,
+         outport_25_, outport_26_, outport_27_, outport_28_, outport_29_;
+  wire   n77, n78, n79, n80, n81, n82, n83, n84, n85, n86, n87, n88, n89, n90,
+         n91, n92, n93, n94, n95, n96, n97, n98, n99, n100, n101, n102, n103,
+         n104, n105, n106, n107, n108, n109, n110, n111, n112, n113, n114,
+         n115, n116, n117, n118, n119, n120, n121, n122, n123, n124, n125,
+         n126, n127, n128, n129, n130, n131, n132, n133, n134, n135, n136,
+         n137, n138, n139, n140, n141, n142, n143, n144, n145, n146, n147,
+         n148;
+
+  TIEHIx1_ASAP7_75t_R U54 ( .H(n77) );
+  INVx1_ASAP7_75t_R U55 ( .A(n77), .Y(outport_29_) );
+  INVx1_ASAP7_75t_R U56 ( .A(n77), .Y(outport_28_) );
+  INVx1_ASAP7_75t_R U57 ( .A(n77), .Y(outport_27_) );
+  INVx1_ASAP7_75t_R U58 ( .A(n77), .Y(outport_26_) );
+  INVx1_ASAP7_75t_R U59 ( .A(n77), .Y(outport_25_) );
+  INVx1_ASAP7_75t_R U60 ( .A(n77), .Y(outport_24_) );
+  INVx1_ASAP7_75t_R U61 ( .A(n77), .Y(outport_23_) );
+  INVx1_ASAP7_75t_R U62 ( .A(n77), .Y(outport_22_) );
+  INVx1_ASAP7_75t_R U63 ( .A(n77), .Y(outport_21_) );
+  INVx1_ASAP7_75t_R U64 ( .A(n77), .Y(outport_20_) );
+  INVx1_ASAP7_75t_R U65 ( .A(n77), .Y(outport_19_) );
+  INVx1_ASAP7_75t_R U66 ( .A(n77), .Y(outport_18_) );
+  INVx1_ASAP7_75t_R U67 ( .A(n77), .Y(outport_17_) );
+  INVx1_ASAP7_75t_R U68 ( .A(n77), .Y(outport_16_) );
+  INVx1_ASAP7_75t_R U69 ( .A(n77), .Y(outport_15_) );
+  INVx1_ASAP7_75t_R U70 ( .A(n77), .Y(outport_14_) );
+  INVx1_ASAP7_75t_R U71 ( .A(n77), .Y(outport_13_) );
+  INVx1_ASAP7_75t_R U72 ( .A(n77), .Y(outport_12_) );
+  INVx1_ASAP7_75t_R U73 ( .A(n77), .Y(outport_11_) );
+  INVx1_ASAP7_75t_R U74 ( .A(n77), .Y(outport_10_) );
+  INVx1_ASAP7_75t_R U75 ( .A(n77), .Y(outport_9_) );
+  INVx1_ASAP7_75t_R U76 ( .A(n77), .Y(outport_8_) );
+  INVx1_ASAP7_75t_R U77 ( .A(n77), .Y(outport_7_) );
+  INVx1_ASAP7_75t_R U78 ( .A(n77), .Y(outport_6_) );
+  INVx1_ASAP7_75t_R U79 ( .A(n77), .Y(outport_5_) );
+  INVx1_ASAP7_75t_R U80 ( .A(n77), .Y(outport_4_) );
+  INVx1_ASAP7_75t_R U81 ( .A(n77), .Y(outport_3_) );
+  HB1xp67_ASAP7_75t_R U82 ( .A(n117), .Y(n97) );
+  INVx2_ASAP7_75t_R U83 ( .A(n87), .Y(n92) );
+  BUFx3_ASAP7_75t_R U84 ( .A(n128), .Y(n87) );
+  OR4x1_ASAP7_75t_R U85 ( .A(dest_y_8_), .B(dest_y_7_), .C(dest_y_6_), .D(
+        dest_y_5_), .Y(n128) );
+  INVx2_ASAP7_75t_R U86 ( .A(n86), .Y(n89) );
+  BUFx3_ASAP7_75t_R U87 ( .A(n126), .Y(n86) );
+  OR4x1_ASAP7_75t_R U88 ( .A(dest_y_22_), .B(dest_y_21_), .C(dest_y_1_), .D(
+        dest_y_18_), .Y(n126) );
+  BUFx3_ASAP7_75t_R U89 ( .A(n121), .Y(n88) );
+  OR4x1_ASAP7_75t_R U90 ( .A(n123), .B(n99), .C(n100), .D(n124), .Y(n121) );
+  INVx2_ASAP7_75t_R U91 ( .A(n110), .Y(n100) );
+  INVx2_ASAP7_75t_R U92 ( .A(n84), .Y(n99) );
+  INVx1_ASAP7_75t_R U93 ( .A(n145), .Y(n96) );
+  INVx1_ASAP7_75t_R U94 ( .A(n134), .Y(n80) );
+  BUFx3_ASAP7_75t_R U95 ( .A(n107), .Y(n91) );
+  INVx2_ASAP7_75t_R U96 ( .A(n88), .Y(n94) );
+  INVx2_ASAP7_75t_R U97 ( .A(n98), .Y(n78) );
+  INVx2_ASAP7_75t_R U98 ( .A(n93), .Y(n90) );
+  BUFx2_ASAP7_75t_R U99 ( .A(n109), .Y(n93) );
+  INVx2_ASAP7_75t_R U100 ( .A(n95), .Y(n85) );
+  INVx2_ASAP7_75t_R U101 ( .A(dest_y_0_), .Y(n106) );
+  INVx2_ASAP7_75t_R U102 ( .A(n91), .Y(n81) );
+  INVx4_ASAP7_75t_R U103 ( .A(dest_x_14_), .Y(n138) );
+  BUFx5_ASAP7_75t_R U104 ( .A(n102), .Y(n98) );
+  INVx4_ASAP7_75t_R U105 ( .A(dest_x_15_), .Y(n137) );
+  INVx8_ASAP7_75t_R U106 ( .A(dest_x_0_), .Y(n105) );
+  BUFx2_ASAP7_75t_R U107 ( .A(n136), .Y(n79) );
+  O2A1O1Ixp5_ASAP7_75t_R U108 ( .A1(n80), .A2(dest_x_16_), .B(dest_x_17_), .C(
+        dest_x_18_), .Y(n133) );
+  AO211x2_ASAP7_75t_R U109 ( .A1(n79), .A2(n135), .B(n137), .C(n138), .Y(n134)
+         );
+  INVx3_ASAP7_75t_R U110 ( .A(dest_x_9_), .Y(n147) );
+  INVx3_ASAP7_75t_R U111 ( .A(dest_x_11_), .Y(n148) );
+  INVx3_ASAP7_75t_R U112 ( .A(dest_y_20_), .Y(n124) );
+  INVx3_ASAP7_75t_R U113 ( .A(dest_y_26_), .Y(n112) );
+  INVx3_ASAP7_75t_R U114 ( .A(dest_y_19_), .Y(n123) );
+  AND2x2_ASAP7_75t_R U115 ( .A(n125), .B(n89), .Y(n82) );
+  AND2x2_ASAP7_75t_R U116 ( .A(n127), .B(n92), .Y(n83) );
+  AND3x4_ASAP7_75t_R U117 ( .A(dest_x_20_), .B(dest_x_17_), .C(dest_x_19_), 
+        .Y(n142) );
+  AND3x4_ASAP7_75t_R U118 ( .A(dest_x_24_), .B(dest_x_23_), .C(dest_x_25_), 
+        .Y(n144) );
+  AND4x2_ASAP7_75t_R U119 ( .A(dest_y_5_), .B(dest_y_6_), .C(dest_y_7_), .D(
+        dest_y_8_), .Y(n119) );
+  BUFx6f_ASAP7_75t_R U120 ( .A(n113), .Y(n84) );
+  AND5x2_ASAP7_75t_R U121 ( .A(dest_y_3_), .B(dest_y_4_), .C(dest_y_2_), .D(
+        dest_y_0_), .E(dest_y_1_), .Y(n120) );
+  NOR2x2_ASAP7_75t_R U122 ( .A(dest_x_13_), .B(dest_x_12_), .Y(n135) );
+  BUFx3_ASAP7_75t_R U123 ( .A(n108), .Y(n95) );
+  AND5x2_ASAP7_75t_R U124 ( .A(dest_y_15_), .B(dest_y_17_), .C(dest_y_14_), 
+        .D(n105), .E(dest_y_11_), .Y(n122) );
+  AOI21x1_ASAP7_75t_R U125 ( .A1(dest_y_0_), .A2(dest_x_0_), .B(n98), .Y(n101)
+         );
+  AND4x2_ASAP7_75t_R U126 ( .A(n94), .B(n120), .C(n119), .D(n122), .Y(n107) );
+  O2A1O1Ixp5_ASAP7_75t_R U127 ( .A1(n146), .A2(n96), .B(n147), .C(n148), .Y(
+        n141) );
+  NAND4xp75_ASAP7_75t_R U128 ( .A(dest_x_8_), .B(dest_x_7_), .C(dest_x_6_), 
+        .D(dest_x_5_), .Y(n146) );
+  OA31x2_ASAP7_75t_R U129 ( .A1(n131), .A2(dest_x_22_), .A3(dest_x_21_), .B1(
+        dest_x_23_), .Y(n130) );
+  AND3x2_ASAP7_75t_R U130 ( .A(dest_x_20_), .B(n132), .C(dest_x_19_), .Y(n131)
+         );
+  AO31x2_ASAP7_75t_R U131 ( .A1(dest_x_25_), .A2(dest_x_24_), .A3(n130), .B(
+        dest_x_26_), .Y(n129) );
+  AND4x2_ASAP7_75t_R U132 ( .A(dest_x_29_), .B(dest_x_28_), .C(n129), .D(
+        dest_x_27_), .Y(n103) );
+  O2A1O1Ixp5_ASAP7_75t_R U133 ( .A1(n116), .A2(dest_y_16_), .B(dest_y_17_), 
+        .C(dest_y_18_), .Y(n115) );
+  AND5x1_ASAP7_75t_R U134 ( .A(dest_x_15_), .B(n142), .C(n141), .D(n143), .E(
+        dest_x_14_), .Y(n108) );
+  AND5x2_ASAP7_75t_R U135 ( .A(dest_x_1_), .B(dest_x_0_), .C(dest_x_2_), .D(
+        dest_x_4_), .E(dest_x_3_), .Y(n145) );
+  NAND2xp5_ASAP7_75t_R U136 ( .A(n82), .B(n83), .Y(n102) );
+  AND3x4_ASAP7_75t_R U137 ( .A(dest_y_28_), .B(dest_y_27_), .C(dest_y_29_), 
+        .Y(n113) );
+  AND3x4_ASAP7_75t_R U138 ( .A(dest_y_24_), .B(dest_y_23_), .C(dest_y_25_), 
+        .Y(n110) );
+  AND4x2_ASAP7_75t_R U139 ( .A(dest_x_27_), .B(dest_x_29_), .C(n144), .D(
+        dest_x_28_), .Y(n143) );
+  NOR4xp75_ASAP7_75t_R U140 ( .A(dest_y_16_), .B(dest_y_13_), .C(dest_y_12_), 
+        .D(dest_y_10_), .Y(n125) );
+  NOR4xp75_ASAP7_75t_R U141 ( .A(dest_y_4_), .B(dest_y_3_), .C(dest_y_2_), .D(
+        dest_y_26_), .Y(n127) );
+  NOR3xp33_ASAP7_75t_R U142 ( .A(n90), .B(n101), .C(outport_0_), .Y(outport_2_) );
+  NOR2xp33_ASAP7_75t_R U143 ( .A(n103), .B(n104), .Y(outport_1_) );
+  AOI321xp33_ASAP7_75t_R U144 ( .A1(n105), .A2(n78), .A3(n106), .B1(n81), .B2(
+        n90), .C(n85), .Y(n104) );
+  O2A1O1Ixp33_ASAP7_75t_R U145 ( .A1(n111), .A2(n100), .B(n112), .C(n99), .Y(
+        n109) );
+  AOI311xp33_ASAP7_75t_R U146 ( .A1(dest_y_20_), .A2(n114), .A3(dest_y_19_), 
+        .B(dest_y_21_), .C(dest_y_22_), .Y(n111) );
+  INVx1_ASAP7_75t_R U147 ( .A(n115), .Y(n114) );
+  INVx1_ASAP7_75t_R U148 ( .A(n97), .Y(n116) );
+  OAI311xp33_ASAP7_75t_R U149 ( .A1(dest_y_12_), .A2(n118), .A3(dest_y_13_), 
+        .B1(dest_y_15_), .C1(dest_y_14_), .Y(n117) );
+  OA21x2_ASAP7_75t_R U150 ( .A1(dest_y_9_), .A2(dest_y_10_), .B(dest_y_11_), 
+        .Y(n118) );
+  OR2x2_ASAP7_75t_R U151 ( .A(n103), .B(n85), .Y(outport_0_) );
+  INVx1_ASAP7_75t_R U152 ( .A(n133), .Y(n132) );
+  A2O1A1Ixp33_ASAP7_75t_R U153 ( .A1(dest_x_9_), .A2(n139), .B(dest_x_10_), 
+        .C(dest_x_11_), .Y(n136) );
+  OR5x1_ASAP7_75t_R U154 ( .A(dest_x_1_), .B(dest_x_2_), .C(n140), .D(
+        dest_x_4_), .E(dest_x_3_), .Y(n139) );
+  OR4x1_ASAP7_75t_R U155 ( .A(dest_x_8_), .B(dest_x_7_), .C(dest_x_6_), .D(
+        dest_x_5_), .Y(n140) );
+endmodule
+

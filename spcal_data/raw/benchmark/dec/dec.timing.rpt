@@ -1,0 +1,38 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : dec
+Version: O-2018.06-SP1
+Date   : Fri Feb  7 23:41:11 2025
+****************************************
+
+Operating Conditions: PVT_0P7V_25C   Library: asap7sc7p5t_SEQ_RVT_TT_nldm_220123
+Wire Load Model Mode: segmented
+
+  Startpoint: count_0_ (input port)
+  Endpoint: selectp1_25_
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  count_0_ (in)                            0.00       0.00 f
+  U436/Y (CKINVDCx16_ASAP7_75t_R)          3.32       3.32 r
+  U435/Y (NOR2x2_ASAP7_75t_R)              7.37      10.68 f
+  U351/Y (BUFx10_ASAP7_75t_R)             22.50      33.18 f
+  U377/Y (AND2x2_ASAP7_75t_R)             20.27      53.45 f
+  U376/Y (BUFx10_ASAP7_75t_R)             22.69      76.14 f
+  U378/Y (INVx8_ASAP7_75t_R)               8.59      84.73 r
+  U648/Y (NOR2xp33_ASAP7_75t_R)            7.67      92.40 f
+  selectp1_25_ (out)                       0.00      92.40 f
+  data arrival time                                  92.40
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

@@ -1,0 +1,55 @@
+libs:
+- asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120
+- asap7sc7p5t_AO_RVT_TT_nldm_211120
+- asap7sc7p5t_INVBUF_RVT_TT_nldm_220122
+- asap7sc7p5t_OA_RVT_TT_nldm_211120
+- asap7sc7p5t_SEQ_RVT_TT_nldm_220123
+- manual
+port_prefixes:
+  input:
+  - .A
+  - .B
+  - .C
+  - .D
+  - .E
+  - .CI
+  - .H
+  output:
+  - .Y
+  - .QN
+  - .L
+  - .SN
+  - .CON
+external_sp_inputs_spec:
+  a_0_: 0.65
+  a_1_: 0.25
+  a_2_: 0.6
+  a_3_: 0.45
+  a_4_: 0.2
+  a_5_: 0.45
+  a_6_: 0.4
+  a_7_: 0.45
+  a_8_: 0.55
+  a_9_: 0.5
+  a_10_: 0.6
+  a_11_: 0.3
+  a_12_: 0.6
+  a_13_: 0.4
+  a_14_: 0.7
+  a_15_: 0.6
+  a_16_: 0.75
+  a_17_: 0.5
+  a_18_: 0.6
+  a_19_: 0.35
+  a_20_: 0.6
+  a_21_: 0.5
+  a_22_: 0.4
+  a_23_: 0.65
+  a_24_: 0.25
+  a_25_: 0.6
+  a_26_: 0.45
+  a_27_: 0.2
+  a_28_: 0.45
+  a_29_: 0.4
+  a_30_: 0.45
+  a_31_: 0.4

@@ -1,0 +1,99 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : voter
+Version: O-2018.06-SP1
+Date   : Sat Feb  8 02:22:27 2025
+****************************************
+
+Operating Conditions: PVT_0P7V_25C   Library: asap7sc7p5t_SEQ_RVT_TT_nldm_220123
+Wire Load Model Mode: segmented
+
+  Startpoint: A_48_ (input port)
+  Endpoint: maj (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  A_48_ (in)                               0.00       0.00 f
+  U11393/SN (FAx1_ASAP7_75t_R)            32.53      32.53 f
+  U9551/Y (BUFx2_ASAP7_75t_R)             23.96      56.48 f
+  U9545/Y (BUFx6f_ASAP7_75t_R)            16.94      73.42 f
+  U4825/Y (INVx4_ASAP7_75t_R)              6.96      80.38 r
+  U6869/Y (NAND2x1p5_ASAP7_75t_R)          7.54      87.92 f
+  U6428/Y (BUFx8_ASAP7_75t_R)             25.05     112.97 f
+  U11389/SN (FAx1_ASAP7_75t_R)            35.70     148.67 f
+  U4821/Y (BUFx2_ASAP7_75t_R)             24.02     172.69 f
+  U4820/Y (BUFx6f_ASAP7_75t_R)            18.03     190.73 f
+  U10246/Y (XOR2x2_ASAP7_75t_R)           30.79     221.52 r
+  U11374/Y (OAI322xp33_ASAP7_75t_R)       18.51     240.03 f
+  U9001/Y (BUFx4_ASAP7_75t_R)             32.66     272.69 f
+  U6646/Y (BUFx16f_ASAP7_75t_R)           21.61     294.29 f
+  U6392/Y (AND2x6_ASAP7_75t_R)            23.67     317.96 f
+  U11300/Y (A2O1A1Ixp33_ASAP7_75t_R)      13.78     331.74 r
+  U11299/Y (OAI321xp33_ASAP7_75t_R)       19.19     350.93 f
+  U10356/Y (BUFx4_ASAP7_75t_R)            31.61     382.54 f
+  U11298/SN (FAx1_ASAP7_75t_R)            36.24     418.78 f
+  U7361/Y (BUFx2_ASAP7_75t_R)             24.11     442.89 f
+  U8003/Y (BUFx6f_ASAP7_75t_R)            17.84     460.73 f
+  U8825/Y (INVx6_ASAP7_75t_R)              7.70     468.44 r
+  U8824/Y (INVx3_ASAP7_75t_R)              5.42     473.85 f
+  U11294/Y (A2O1A1Ixp33_ASAP7_75t_R)      14.23     488.08 r
+  U6207/Y (BUFx5_ASAP7_75t_R)             25.81     513.89 r
+  U11291/Y (OR2x2_ASAP7_75t_R)            18.10     531.99 r
+  U11290/Y (A2O1A1Ixp33_ASAP7_75t_R)      14.70     546.68 f
+  U9950/Y (BUFx5_ASAP7_75t_R)             27.76     574.44 f
+  U6640/Y (BUFx16f_ASAP7_75t_R)           21.03     595.47 f
+  U10783/Y (AO21x2_ASAP7_75t_R)           25.07     620.55 f
+  U7250/Y (OAI21x1_ASAP7_75t_R)            8.10     628.65 r
+  U7249/Y (BUFx8_ASAP7_75t_R)             25.98     654.63 r
+  U8774/Y (INVx6_ASAP7_75t_R)              7.28     661.91 f
+  U11071/Y (AND2x2_ASAP7_75t_R)           18.41     680.32 f
+  U10729/Y (OA22x2_ASAP7_75t_R)           25.98     706.30 f
+  U5577/Y (BUFx6f_ASAP7_75t_R)            18.42     724.73 f
+  U5726/Y (AND2x4_ASAP7_75t_R)            18.68     743.41 f
+  U5617/Y (INVx2_ASAP7_75t_R)              6.11     749.52 r
+  U11070/Y (OAI322xp33_ASAP7_75t_R)       15.80     765.32 f
+  U9689/Y (BUFx4_ASAP7_75t_R)             32.24     797.56 f
+  U11051/Y (A2O1A1Ixp33_ASAP7_75t_R)      15.35     812.91 r
+  U9085/Y (BUFx5_ASAP7_75t_R)             24.82     837.73 r
+  U9902/Y (INVx2_ASAP7_75t_R)              8.04     845.77 f
+  U8020/Y (AND2x4_ASAP7_75t_R)            18.91     864.68 f
+  U8019/Y (BUFx16f_ASAP7_75t_R)           19.55     884.24 f
+  U5656/Y (INVx5_ASAP7_75t_R)              6.55     890.79 r
+  U11049/Y (A2O1A1Ixp33_ASAP7_75t_R)      13.66     904.45 f
+  U9077/Y (BUFx2_ASAP7_75t_R)             22.14     926.58 f
+  U11048/Y (INVx1_ASAP7_75t_R)             8.39     934.97 r
+  U10456/Y (OA221x2_ASAP7_75t_R)          21.83     956.81 r
+  U8519/Y (BUFx6f_ASAP7_75t_R)            16.27     973.07 r
+  U10457/Y (INVx4_ASAP7_75t_R)             5.94     979.02 f
+  U5731/Y (NAND2x1p5_ASAP7_75t_R)          8.87     987.89 r
+  U10780/Y (XOR2x2_ASAP7_75t_R)           27.34    1015.23 f
+  U10778/Y (BUFx6f_ASAP7_75t_R)           18.15    1033.38 f
+  U10701/Y (AO21x2_ASAP7_75t_R)           22.27    1055.65 f
+  U6668/Y (OAI21xp5_ASAP7_75t_R)           9.17    1064.82 r
+  U7191/Y (BUFx5_ASAP7_75t_R)             24.81    1089.62 r
+  U11029/SN (FAx1_ASAP7_75t_R)            35.31    1124.93 f
+  U6329/Y (BUFx4_ASAP7_75t_R)             32.57    1157.50 f
+  U10712/Y (AO21x2_ASAP7_75t_R)           24.72    1182.22 f
+  U9941/Y (OAI21xp5_ASAP7_75t_R)           9.17    1191.39 r
+  U6664/Y (BUFx5_ASAP7_75t_R)             23.70    1215.09 r
+  U6658/Y (AND2x4_ASAP7_75t_R)            18.73    1233.82 r
+  U10145/Y (O2A1O1Ixp5_ASAP7_75t_R)       11.11    1244.93 f
+  U10143/Y (AO332x2_ASAP7_75t_R)          44.15    1289.08 f
+  U5669/Y (BUFx3_ASAP7_75t_R)             19.14    1308.22 f
+  U5668/Y (INVx2_ASAP7_75t_R)              6.34    1314.56 r
+  U8793/Y (OA221x2_ASAP7_75t_R)           18.18    1332.73 r
+  U8794/Y (INVxp33_ASAP7_75t_R)            5.01    1337.74 f
+  maj (out)                                0.00    1337.74 f
+  data arrival time                                1337.74
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
