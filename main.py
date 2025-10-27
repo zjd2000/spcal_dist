@@ -217,7 +217,7 @@ if __name__ == "__main__":
         "data_dir": "spcal_data",
         "netlist": "demo/mac_20/mac_20_flattened.v",
         "config": "demo/mac_20/mac_20.yaml",
-        "bdd_backend": "autoref",
+        "bdd_backend": "cudd",
         "visual": "False",
         "output_dir": "demo/mac_20/outputs",
         "bdd_dump_path": None,
